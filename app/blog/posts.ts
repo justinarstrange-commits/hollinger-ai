@@ -195,6 +195,23 @@ export const posts: Post[] = [
     ],
   },
   {
+    slug: "fabrication_shop_quoting",
+    title: "What Fabrication Shops Lose Every Week to Manual Quoting",
+    date: "September 16, 2025",
+    category: "Industry",
+    readTime: "5 min read",
+    excerpt:
+      "Most fabrication shops run their estimating the same way they did fifteen years ago. A skilled estimator, a spreadsheet, and a stack of supplier price sheets. The margin erosion is quiet and consistent.",
+    content: [
+      "Most fabrication shops run their estimating the same way they did fifteen years ago. A skilled estimator pulls material pricing from supplier lists that may be weeks out of date, calculates labor hours from experience and intuition, and builds the quote in a spreadsheet or a job management system that was not designed for complex fabrication work. The quote goes out. The job gets won. The margin does not match the estimate.",
+      "This is not a people problem. Experienced estimators are among the most valuable people in any fab shop. The problem is the process they are forced to operate within. Material prices for steel, aluminum, and specialty alloys change frequently and without notice. An estimator quoting on a Tuesday morning may be working from pricing that is two weeks old. On a competitive job with tight margins, that gap is often the difference between a profitable contract and one that bleeds.",
+      "Speed compounds the problem. A shop running at capacity cannot afford to have its best estimator spending four hours on a single complex quote. The pressure to produce estimates quickly leads to shortcuts. Assumptions replace calculations. Historical pricing gets applied to jobs where the material mix is different. Rush jobs get quoted without proper margin analysis because the customer needs an answer today.",
+      "The other issue is concentration of knowledge. When quoting accuracy lives in one person's head, the business is exposed every time that person is sick, on holiday, or eventually moves on. Shops that have tried to document their estimating logic discover how much of it was never written down.",
+      "AI-assisted quoting connects directly to live supplier pricing, calculates labor from actual historical job data rather than estimates, and produces accurate quotes in a fraction of the time. The estimator's expertise does not disappear — it gets encoded into the system and becomes a repeatable, auditable process instead of a personal skill.",
+      "If your estimator is the bottleneck in your sales process, or if you are consistently winning jobs that underperform on margin, that is a problem we have solved for fabrication operations before. It is not a long project. The data you need to make it work is already in your system.",
+    ],
+  },
+  {
     slug: "enterprise_ai_stack_2025",
     title: "The Enterprise AI Stack: What Actually Matters",
     date: "October 14, 2025",
@@ -226,6 +243,74 @@ export const posts: Post[] = [
       "What separates them is not resources, industry, or access to talent. The organizations that have succeeded share a common profile: they defined problems before they selected technology, they treated deployment as the goal rather than exploration, and they held the AI initiative to the same accountability standards as any other operational investment.",
       "The organizations that have struggled share a different profile: they started with the technology rather than the problem, they measured inputs rather than outcomes, and they treated skepticism about results as a communication problem rather than useful data.",
       "The AI landscape in early 2026 is more mature than it was two years ago. The technology is more capable, more accessible, and better understood. What has not changed is the underlying requirement for operational discipline. The technology will not compensate for a poorly defined problem, inadequate data, or an organization that has not committed to deployment. It never did.",
+    ],
+  },
+  {
+    slug: "healthcare_admin_ai",
+    title: "AI for Healthcare Administration: Where the ROI Is Clear",
+    date: "November 11, 2025",
+    category: "Industry",
+    readTime: "4 min read",
+    excerpt:
+      "Healthcare administration runs on documentation, approvals, and follow-up. Most of it is still handled manually by staff who could be doing something more valuable. The case for AI here is not theoretical.",
+    content: [
+      "Healthcare administration runs on documentation, approvals, and follow-up. Prior authorizations, insurance verifications, scheduling, compliance reporting, billing reconciliation — most of it is handled manually by staff working through inboxes, phone queues, and systems that do not talk to each other. The clinical care is excellent. The administrative infrastructure surrounding it is where hours disappear.",
+      "Prior authorization is the clearest example. A single prior auth submission can take anywhere from 30 minutes to several hours depending on the payer, the procedure, and the completeness of the documentation on the first submission. Denials require follow-up, appeals, and additional documentation. Administrative staff often manage dozens of these simultaneously. The work is rules-based, repetitive, and traceable — exactly the kind of work where AI removes overhead without removing judgment.",
+      "Scheduling presents a different kind of problem. No-shows and late cancellations leave gaps that are expensive and often unfillable on short notice. Rebooking is handled manually, often through outbound calls that are time-consuming and inconsistent. Automated scheduling and intelligent waitlist management are not new ideas, but implementations that actually work inside existing practice management systems are less common than the vendor landscape suggests.",
+      "Compliance documentation is the third area. Healthcare organizations maintain extensive records for accreditation, regulatory audits, and internal quality review. Assembling these records when they are needed is often a manual process that falls to staff who were not involved in the original documentation. AI that structures and indexes documentation as it is created is substantially easier to audit than documentation assembled after the fact.",
+      "The ROI in healthcare administration AI is measurable and relatively quick to realize. The integration work is more complex than in other industries due to the regulatory environment and the variability of existing systems. But the operational case is clear, and the organizations doing this work are not waiting for the technology to mature further.",
+      "If your administrative team is spending more time on paperwork than on patients, and your current systems are not closing that gap, it is worth a direct conversation about what is actually solvable and on what timeline.",
+    ],
+  },
+  {
+    slug: "logistics_freight_exceptions",
+    title: "Freight Exception Management Is Eating Your Team's Day",
+    date: "December 9, 2025",
+    category: "Industry",
+    readTime: "4 min read",
+    excerpt:
+      "Every logistics operation has exceptions. Late pickups, damaged freight, missing proof of delivery, carrier disputes. The volume is predictable. The handling is not.",
+    content: [
+      "Every logistics operation has exceptions. Late pickups, damaged freight, missing proof of delivery, carrier disputes, accessorial charge discrepancies. The volume is predictable. The handling is almost entirely manual.",
+      "A freight coordinator managing a busy lane spends a significant part of each day on exception handling. An email from a carrier about a delayed pickup. A customer asking for a status update on a shipment that has gone quiet. A billing dispute that requires pulling documents from three different systems and reconstructing a timeline. Each individual exception is manageable. The aggregate is a job in itself.",
+      "The problem compounds because exceptions rarely arrive on a schedule. They land throughout the day, interrupt other work, and require responses on the carrier's or customer's timeline rather than the coordinator's. High-urgency exceptions — a missed delivery on a time-sensitive shipment, a customs hold — require immediate attention regardless of what else is happening. The result is reactive work that prevents the team from spending time on the forward-looking tasks that actually improve operations.",
+      "Automation addresses this at several levels. Routine exceptions with defined resolution paths — missing POD requests, standard carrier check-ins, predictable delay notifications — can be handled automatically without coordinator involvement. Higher-complexity exceptions can be triaged, enriched with relevant shipment data, and routed to the right person with context already assembled. The coordinator stops seeing every exception and starts seeing only the ones that require actual judgment.",
+      "The integrations required to make this work are well-established: TMS data, carrier APIs, customer notification systems. The implementation is not complex for an operation that already has its data in accessible systems.",
+      "If your team is spending more time managing exceptions than managing lanes, and headcount is not keeping pace with volume, that is the conversation worth having. The operations we have built this for have consistently described the same outcome: the work did not go away, but the team stopped being consumed by it.",
+    ],
+  },
+  {
+    slug: "construction_document_workflows",
+    title: "Construction's Document Problem and What AI Actually Does About It",
+    date: "February 17, 2026",
+    category: "Industry",
+    readTime: "5 min read",
+    excerpt:
+      "A mid-size commercial construction project generates thousands of documents. RFIs, submittals, change orders, daily reports, safety records, subcontractor correspondence. Most of it is managed through email threads and shared drives.",
+    content: [
+      "A mid-size commercial construction project generates thousands of documents. RFIs, submittals, change orders, daily site reports, safety records, lien waivers, subcontractor correspondence. Most of it is managed through email threads, shared drives, and project management software that tracks existence of documents better than it tracks their content or implications.",
+      "The RFI process is where this becomes most visible. A subcontractor submits a request for information. It goes to the GC's project manager. The PM determines who needs to answer it and forwards it to the design team or owner. The response comes back. The PM routes it to the subcontractor. If the response has scope or cost implications, a change order process begins. Each step is documented, but assembling a complete picture of where a given RFI stands, whether it has been responded to, whether the response created a downstream obligation, typically requires manual research across multiple systems.",
+      "Multiply this across the volume of RFIs a busy project generates — on a complex commercial build, hundreds over the project life — and the administrative overhead becomes significant. Project managers who should be managing risk and coordinating work spend meaningful time on document triage and status tracking instead.",
+      "Change order management has a similar profile. Change orders involve cost implications, schedule impacts, and often disputed scope. Tracking what was agreed, what was submitted, what was approved, and what was actually billed requires documentation discipline that varies widely across teams and projects. Disputes at closeout frequently come back to documentation gaps that could have been prevented with better workflow structure.",
+      "AI in construction document workflows does not replace the judgment of an experienced PM. It handles the routing, the tracking, the escalation when items are overdue, and the assembly of documentation when it is needed for disputes, audits, or closeout. It makes the PM's job more about decisions and less about administration.",
+      "Construction firms that have deployed this describe the same change: their project managers are not doing less work, they are doing different work. If your teams are buried in admin on every project, that pattern is not going to fix itself as project complexity increases. It is fixable now.",
+    ],
+  },
+  {
+    slug: "manufacturing_shift_handoff",
+    title: "The Shift Handoff Problem in Manufacturing",
+    date: "March 17, 2026",
+    category: "Industry",
+    readTime: "4 min read",
+    excerpt:
+      "Every manufacturing operation has three or four shift handoffs every day. Each one is a point where information is lost, context is dropped, and problems that started on one shift become crises on the next.",
+    content: [
+      "Every manufacturing operation running multiple shifts has three or four handoffs every day. Each one is a moment where information transfers between teams, and each one is a point where something gets lost.",
+      "The shift handoff is an old problem and most operations have some process for managing it. A logbook. A verbal briefing. A whiteboard. A section of the MES or ERP dedicated to shift notes. The problem is not that these mechanisms do not exist. It is that they depend on the outgoing shift accurately capturing what happened, the incoming shift actually reading and retaining what was written, and both teams sharing the same definition of what is worth documenting.",
+      "In practice, handoff quality varies with the shift. A smooth run produces a brief, optimistic log. A difficult shift produces either a detailed record of everything that went wrong, or a minimal one because the team was too busy dealing with problems to document them. Incoming supervisors learn quickly not to trust the log as a complete picture and spend the first part of each shift piecing together the actual state of the floor through their own observation and informal conversations.",
+      "This information loss has a compounding cost. A machine running slightly out of spec at the end of first shift produces defects on second. A maintenance issue flagged verbally but not documented gets missed in the shift change and becomes a breakdown on third. A quality concern noted by one operator does not make it into the log and is not checked during incoming inspection. The root cause in each case is not the machine or the process — it is the handoff.",
+      "Structured AI-assisted shift reporting changes the input side of this problem. Rather than relying on supervisors to decide what to document, the system prompts for the specific information that matters: production against target, equipment status, quality holds, open maintenance tickets, safety observations, items requiring follow-up. The incoming supervisor does not read a freeform log. They receive a structured brief with the previous shift's status on every dimension that affects their shift.",
+      "If your operations are losing continuity between shifts, and the same problems are appearing shift after shift without resolution, the handoff is worth examining before anything else. The fix is not complicated, and the impact on operational consistency is immediate.",
     ],
   },
 ];

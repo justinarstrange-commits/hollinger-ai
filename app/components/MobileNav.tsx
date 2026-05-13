@@ -38,7 +38,7 @@ export default function MobileNav() {
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-[#0a0a0a] px-6 py-4">
+        <div className="fixed inset-0 z-[200] flex flex-col bg-[#0a0a0a] px-6 py-4">
           <div className="flex items-center justify-between">
             <Image
               src="/logo.png"

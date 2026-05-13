@@ -194,18 +194,24 @@ export default function Home() {
               <br />
               <span className="text-zinc-300">Without the complexity.</span>
             </h1>
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-zinc-300">
-              Bespoke AI integration built around your operation. Not a
-              packaged product. Not a discount service. Every solution is
-              custom-designed, simple for your team to run from day one, and
-              backed by the people who built it.
-            </p>
+            <ul className="mt-8 space-y-3 text-left">
+              {[
+                "Built around your operation — not a packaged product",
+                "Custom-designed and simple for your team to run",
+                "Backed by the people who built it, start to finish",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-base text-zinc-300">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                  {item}
+                </li>
+              ))}
+            </ul>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
               <a
-                href="#contact"
+                href="#faq"
                 className="rounded-sm bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500"
               >
-                Book a Strategy Call
+                Learn More
               </a>
               <a
                 href="#how-it-works"
@@ -263,13 +269,17 @@ export default function Home() {
             <p className="mb-10 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
               Industries We Serve
             </p>
-            <div className="grid grid-cols-2 gap-px border border-zinc-800 bg-zinc-800 sm:grid-cols-3 lg:grid-cols-6">
+            <div className="grid grid-cols-2 gap-px border border-zinc-800 bg-zinc-800 sm:grid-cols-5 lg:grid-cols-5">
               {[
-                "Metal Fabrication & Welding",
                 "Manufacturing & Production",
                 "Industrial Operations",
+                "Fabrication & Trades",
                 "Logistics & Supply Chain",
                 "Construction & Trades",
+                "Healthcare & Medical",
+                "Hospitality & Food Service",
+                "Retail & Distribution",
+                "Energy & Utilities",
                 "Professional Services",
               ].map((industry) => (
                 <div
@@ -401,7 +411,7 @@ export default function Home() {
         <section id="team" className="border-t border-zinc-800 px-6 py-24 md:py-32">
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">
-              The Team
+              Management Team
             </p>
             <h2 className="mb-16 max-w-xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
               People who have done this before.
