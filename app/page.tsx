@@ -53,7 +53,7 @@ const results = [
   { stat: "3–5 wks", label: "Average time to deployment" },
   { stat: "40%", label: "Average reduction in process time" },
   { stat: "42+", label: "Enterprise clients" },
-  { stat: "$2M+", label: "Estimated annual savings delivered" },
+  { stat: "$12M+", label: "Estimated annual savings delivered" },
 ];
 
 const team = [
