@@ -61,7 +61,7 @@ const team = [
     name: "Justin Strange",
     title: "Founder & Managing Director",
     bio: "Built the firm after two decades simplifying how organizations operate. His focus has always been the same: find where complexity is costing the business and eliminate it. AI is just the most powerful tool he has had to do that with.",
-    image: "/team_marcus.png",
+    image: "/team_justin.png",
   },
   {
     name: "Catherine Rhodes",
