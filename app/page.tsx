@@ -381,17 +381,20 @@ export default function Home() {
                     months to show value.
                   </p>
                   <p className="text-base leading-relaxed">
-                    Our team has deployed AI inside fabrication shops,
-                    manufacturing facilities, industrial operations, and
-                    logistics businesses — the kinds of organizations where a
-                    broken process has a real dollar cost and a theoretical
-                    solution is worth nothing. We don't sell strategy. We sell
-                    outcomes, and we stay until the outcome is real.
+                    Our team has deployed AI inside manufacturing facilities,
+                    industrial operations, logistics businesses, and trades
+                    organizations — the kinds of businesses where a broken
+                    process has a real dollar cost and a theoretical solution is
+                    worth nothing. We don't sell strategy. We sell outcomes, and
+                    we stay until the outcome is real.
                   </p>
                   <p className="text-base leading-relaxed">
                     Client obsession isn't a value on our website. It's the
-                    reason clients call us back. If you need it working by Q3,
-                    we're the firm.
+                    reason clients call us back. If you need a solution your
+                    team can actually run — without calling us every time
+                    something changes, without a six-month training program, and
+                    without a follow-on contract to make the first one work —
+                    you are describing exactly what we build.
                   </p>
                 </div>
               </div>
@@ -494,7 +497,7 @@ export default function Home() {
               {[
                 {
                   q: "We're not a tech company. Is AI actually relevant to us?",
-                  a: "That's exactly who we work with. Fabrication shops, manufacturers, and industrial operations have some of the highest concentrations of repetitive, manual processes — quoting, scheduling, job tracking, inventory, compliance documentation. These are the workflows where AI creates the most immediate ROI. You don't need to be a tech company to benefit. You just need processes worth fixing.",
+                  a: "That's exactly who we work with. Manufacturers, industrial operations, trades businesses, and logistics firms have some of the highest concentrations of repetitive, manual processes — quoting, scheduling, job tracking, inventory, compliance documentation. These are the workflows where AI creates the most immediate ROI. You don't need to be a tech company to benefit. You just need processes worth fixing.",
                 },
                 {
                   q: "How long does an engagement take?",
