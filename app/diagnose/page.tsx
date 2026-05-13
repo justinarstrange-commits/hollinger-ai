@@ -153,6 +153,13 @@ export default function DiagnosePage() {
   const handleSelect = (option: string) => {
     setAnswers((prev) => ({ ...prev, [current.id]: option }));
     setShowOther((prev) => ({ ...prev, [current.id]: false }));
+    setTimeout(() => {
+      if (step < total - 1) {
+        setStep((s) => s + 1);
+      } else {
+        submitAnswers();
+      }
+    }, 300);
   };
 
   const handleOtherToggle = () => {
