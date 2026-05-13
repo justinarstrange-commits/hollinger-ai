@@ -405,6 +405,10 @@ export default function Home() {
                   fill
                   className="object-cover object-top"
                 />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0a0a0a] to-transparent px-6 pb-6 pt-16">
+                  <p className="text-base font-semibold text-white">David Mercer</p>
+                  <p className="text-sm text-blue-500">Chief AI Officer</p>
+                </div>
               </div>
             </div>
           </div>
