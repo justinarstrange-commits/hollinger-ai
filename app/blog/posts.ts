@@ -313,6 +313,23 @@ export const posts: Post[] = [
       "If your operations are losing continuity between shifts, and the same problems are appearing shift after shift without resolution, the handoff is worth examining before anything else. The fix is not complicated, and the impact on operational consistency is immediate.",
     ],
   },
+  {
+    slug: "dental_practice_ai_workflows",
+    title: "Why Dental Practices Are One of the Best Use Cases for AI Workflow Automation",
+    date: "May 6, 2026",
+    category: "Industry",
+    readTime: "5 min read",
+    excerpt:
+      "Dental practices run on scheduling, insurance, documentation, and recall. Almost all of it is handled manually. The operational profile of a busy dental office is nearly identical to the kinds of organizations where AI workflow automation delivers its fastest returns.",
+    content: [
+      "Dental practices run on scheduling, insurance verification, clinical documentation, billing, and patient recall. In most practices, almost all of it is handled manually by a front desk team that is simultaneously answering phones, checking patients in, processing payments, and managing a schedule that changes constantly throughout the day. The operational profile of a busy dental office is nearly identical to the kinds of organizations where AI workflow automation delivers its fastest returns.",
+      "Insurance verification is where the administrative burden is most visible. Before a patient appointment, someone on the front desk needs to verify coverage, confirm the patient's remaining benefits, check for any limitations or waiting periods on specific procedures, and determine what the patient's estimated out-of-pocket cost will be. On a full day of appointments, this process consumes hours of staff time — and when it is rushed or skipped, the practice ends up in billing disputes after the fact. AI-assisted verification connects to insurance portals, pulls the relevant benefit information, and prepares a summary before the appointment without manual lookup.",
+      "Patient recall is the second area. Every practice has a recall system — patients who are due for hygiene appointments, follow-up treatment, or have unscheduled treatment plans on file. Managing recall manually means phone calls that go unanswered, lists that grow stale, and revenue from scheduled treatment that never converts. Automated recall sequences handle outreach across text, email, and phone without consuming front desk time, and they follow up consistently in a way that a manual process never does.",
+      "Clinical documentation is the third. Dentists and hygienists spend significant time after appointments completing charts, treatment notes, and billing codes. AI-assisted documentation that drafts notes from structured inputs or voice capture reduces the administrative burden at the end of each appointment and improves consistency across the practice's records.",
+      "The billing cycle benefits as well. Dental billing involves procedure codes, claim submission, follow-up on unpaid claims, and patient statement management. Each step is rules-based and repetitive. Practices that have automated their billing workflows consistently see faster claim turnaround and lower accounts receivable aging.",
+      "A dental practice with three chairs and a busy schedule is running a more complex operation than most people outside the industry appreciate. The administrative overhead is real, the staff cost is significant, and the technology most practices are running was not designed to reduce either. If your front desk is overwhelmed and your recall list is a source of anxiety rather than a revenue tool, that is a solvable problem. We have built this for healthcare operations before and the timeline to production is shorter than you would expect.",
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
