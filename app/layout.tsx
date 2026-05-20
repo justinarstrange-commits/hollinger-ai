@@ -15,31 +15,21 @@ const geistMono = Geist_Mono({
 const url = "https://hollingerai.online";
 
 export const metadata: Metadata = {
-  title: "Hollinger AI Power Solutions",
-  description:
-    "AI workflow integration for operations teams that need results. Without the complexity.",
   metadataBase: new URL(url),
+  title: {
+    default: "Hollinger AI Power Solutions | Vancouver AI Integration",
+    template: "%s | Hollinger AI",
+  },
+  description:
+    "Custom AI workflow integrations for manufacturing, logistics, construction, and operations businesses in Vancouver, BC and across Canada.",
   openGraph: {
-    title: "Hollinger AI Power Solutions",
-    description:
-      "AI workflow integration for operations teams that need results. Without the complexity.",
-    url,
     siteName: "Hollinger AI Power Solutions",
-    images: [
-      {
-        url: "/hero.png",
-        width: 1978,
-        height: 1114,
-        alt: "Hollinger AI Power Solutions",
-      },
-    ],
+    images: [{ url: "/hero.png", width: 1978, height: 1114, alt: "Hollinger AI Power Solutions" }],
     type: "website",
+    locale: "en_CA",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hollinger AI Power Solutions",
-    description:
-      "AI workflow integration for operations teams that need results. Without the complexity.",
     images: ["/hero.png"],
   },
 };

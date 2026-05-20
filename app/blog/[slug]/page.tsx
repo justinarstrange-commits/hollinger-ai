@@ -16,9 +16,27 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
+  const BASE = "https://hollingerai.online";
   return {
-    title: `${post.title} | Hollinger AI`,
+    title: `${post.title} | Hollinger AI Power Solutions`,
     description: post.excerpt,
+    keywords: ["AI integration", "Vancouver", "workflow automation", post.category],
+    authors: [{ name: "Hollinger AI Power Solutions", url: BASE }],
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      url: `${BASE}/blog/${slug}`,
+      siteName: "Hollinger AI Power Solutions",
+      images: [{ url: `${BASE}/hero.png`, width: 1978, height: 1114, alt: post.title }],
+      publishedTime: new Date(post.date).toISOString(),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [`${BASE}/hero.png`],
+    },
   };
 }
 

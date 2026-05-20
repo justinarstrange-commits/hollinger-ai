@@ -5,9 +5,36 @@ import MobileNav from "./components/MobileNav";
 import ContactForm from "./components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Hollinger AI Power Solutions",
+  title: "Hollinger AI Power Solutions | Vancouver AI Integration",
   description:
-    "AI workflow integration for operations teams that need results. Client-obsessed from day one.",
+    "Hollinger AI builds custom AI workflow integrations for manufacturing, logistics, construction, and operations businesses in Vancouver and across Canada. Results in weeks, not quarters.",
+  keywords: [
+    "AI workflow integration Vancouver",
+    "AI automation for small business",
+    "AI integration Canada",
+    "business AI consulting Vancouver BC",
+    "workflow automation Vancouver",
+    "AI for manufacturing",
+    "AI for construction",
+    "AI for logistics",
+    "Hollinger AI",
+  ],
+  openGraph: {
+    title: "Hollinger AI Power Solutions | Vancouver AI Integration",
+    description:
+      "Custom AI workflow integrations for operations businesses in Vancouver and across Canada. From audit to production in weeks.",
+    url: "https://hollingerai.online",
+    siteName: "Hollinger AI Power Solutions",
+    images: [{ url: "/hero.png", width: 1978, height: 1114, alt: "Hollinger AI Power Solutions" }],
+    type: "website",
+    locale: "en_CA",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hollinger AI Power Solutions",
+    description: "Custom AI workflow integrations for operations businesses. Results in weeks.",
+    images: ["/hero.png"],
+  },
 };
 
 const services = [
@@ -120,9 +147,56 @@ const testimonials = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://hollingerai.online/#organization",
+      "name": "Hollinger AI Power Solutions",
+      "url": "https://hollingerai.online",
+      "logo": "https://hollingerai.online/logo.png",
+      "image": "https://hollingerai.online/hero.png",
+      "description": "Custom AI workflow integrations for manufacturing, logistics, construction, and operations businesses in Vancouver, BC and across Canada.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "addressCountry": "CA",
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Justin Strange",
+        "url": "https://justinstrange.com",
+      },
+      "areaServed": ["Vancouver", "British Columbia", "Canada"],
+      "knowsAbout": [
+        "AI Workflow Automation",
+        "Machine Learning Integration",
+        "Business Process Automation",
+        "AI Consulting",
+      ],
+      "sameAs": [
+        "https://hollinger-holdings.com",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hollingerai.online/#website",
+      "url": "https://hollingerai.online",
+      "name": "Hollinger AI Power Solutions",
+      "publisher": { "@id": "https://hollingerai.online/#organization" },
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <div className="overflow-x-hidden bg-[#0a0a0a] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Nav */}
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-zinc-800 bg-[#0a0a0a]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
