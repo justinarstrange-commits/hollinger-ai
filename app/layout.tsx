@@ -16,6 +16,9 @@ const url = "https://hollingerai.online";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
+  verification: {
+    google: "f-ku-NPU3c8qh4B3WalKDRXvgHh_yjOpmA0lvGkwxtU",
+  },
   title: {
     default: "Hollinger AI Power Solutions | Vancouver AI Integration",
     template: "%s | Hollinger AI",
