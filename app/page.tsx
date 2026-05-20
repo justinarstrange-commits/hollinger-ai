@@ -62,6 +62,7 @@ const team = [
     title: "Founder & Managing Director",
     bio: "Built the firm after two decades simplifying how organizations operate. His focus has always been the same: find where complexity is costing the business and eliminate it. AI is just the most powerful tool he has had to do that with.",
     image: "/team_justin.png",
+    link: "https://justinstrange.site",
   },
   {
     name: "Catherine Rhodes",
@@ -449,6 +450,16 @@ export default function Home() {
                   <p className="text-sm leading-relaxed text-zinc-400">
                     {member.bio}
                   </p>
+                  {"link" in member && member.link && (
+                    <a
+                      href={member.link as string}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-block text-xs font-medium uppercase tracking-widest text-zinc-500 transition-colors hover:text-white"
+                    >
+                      justinstrange.site →
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
@@ -547,8 +558,12 @@ export default function Home() {
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-zinc-400">
                   Tell us what you're trying to fix. No pitch deck, no
-                  discovery questionnaire — just a direct conversation about
-                  your operation.
+                  hard sell — just a direct conversation about your operation.
+                  If you'd prefer to start online, use our{" "}
+                  <Link href="/diagnose" className="text-blue-500 hover:text-blue-400 transition-colors">
+                    diagnostic questionnaire
+                  </Link>{" "}
+                  and we'll come back to you with an assessment.
                 </p>
                 <ContactForm />
               </div>
