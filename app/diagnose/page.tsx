@@ -27,6 +27,7 @@ const questions = [
     options: [
       "Too much manual data entry or reporting",
       "Slow or inconsistent quoting and estimating",
+      "Generating leads and closing more sales",
       "Communication gaps between teams or departments",
       "Quality control and error tracking",
       "Scheduling and job management",
@@ -76,6 +77,7 @@ const questions = [
     question: "What does success look like to you?",
     options: [
       "My team spends less time on repetitive tasks",
+      "More leads coming in and converting to sales",
       "Fewer errors and less rework",
       "Faster turnaround on quotes or jobs",
       "Better visibility into what's happening day-to-day",
