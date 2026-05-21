@@ -703,6 +703,14 @@ export default function Home() {
                 AI workflow integration for operations teams that need results.
                 Without the complexity.
               </p>
+              <div className="mt-4 space-y-1">
+                <p className="text-xs font-semibold uppercase tracking-widest text-zinc-600">
+                  Applied AI Performance Systems
+                </p>
+                <p className="text-xs text-zinc-700">
+                  A Justin Strange company
+                </p>
+              </div>
             </div>
 
             <div>
