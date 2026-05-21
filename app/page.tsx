@@ -768,13 +768,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-16 flex flex-col items-start justify-between gap-2 border-t border-zinc-800 pt-8 sm:flex-row sm:items-center">
+          <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-zinc-800 pt-8 sm:flex-row sm:items-center">
             <p className="text-xs text-zinc-600">
               © 2026 Hollinger AI Power Solutions. All rights reserved.
             </p>
-            <p className="text-xs text-zinc-600">
-              hollingerai.online
-            </p>
+            <div className="text-right">
+              <p className="text-xs text-zinc-500 tracking-widest uppercase">Hollinger AI</p>
+              <p className="text-xs text-zinc-700 tracking-widest uppercase">Applied AI Performance Systems</p>
+              <p className="text-xs text-zinc-700 tracking-widest uppercase">A Justin Strange Company</p>
+            </div>
           </div>
         </div>
       </footer>
