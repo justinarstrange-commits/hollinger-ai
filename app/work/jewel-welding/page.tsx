@@ -18,27 +18,29 @@ export const metadata: Metadata = {
   },
 };
 
-// Anything in [BRACKETS] is a fact only Justin can confirm. Do not deploy with brackets in place.
-
+// Drawn from the live Jipsi build. Confirm against Work Order HAI-JWF-2026-002 which items are Phase 1 and which are Phase 2.
 const phaseOne = [
-  "[ITEM 1 FROM WORK ORDER HAI-JWF-2026-002]",
-  "[ITEM 2]",
-  "[ITEM 3]",
-  "[ITEM 4]",
-  "[ITEM 5]",
-  "[ITEM 6]",
-  "[ITEM 7]",
-  "[ITEM 8]",
-  "[ITEM 9]",
-  "[ITEM 10]",
+  "Job master: one record per job carrying drawings, revisions, and every document that references it",
+  "Transmittal cover letter generator and a transmittal log that doubles as the document register",
+  "Submittal status tracking",
+  "Digital QCF-100 cut in, QCF-101 fit up, and QCF-102 welding inspection forms with signed PDF output",
+  "QCF-103 bolt up field installation and QCF-104 weld traveller forms with signed PDF output",
+  "Welder qualification matcher: the welder assigned must hold a current qualification for the procedure, or the assignment is blocked",
+  "Welder continuity tracker so lapsed qualifications surface before a weld, not after",
+  "Personnel certifications register and calibration tracker with expiry dates",
+  "Weld procedure search across the shop's WPS library",
+  "Scan to PDF: paper travellers, mill certs, and inspection sheets digitized, named by job, and filed against the job record",
 ];
 
 const outcomes = [
-  { stat: "[N]", label: "[minutes to find a job's inspection status, before]" },
-  { stat: "[N]", label: "[minutes now]" },
-  { stat: "[N]", label: "[paper forms retired]" },
-  { stat: "0", label: "[jobs advanced past a missed hold point since go live, confirm with Paul]" },
+  { stat: "5", label: "paper inspection forms replaced with digital forms and signed PDF output" },
+  { stat: "0", label: "welder assignments possible without a current qualification on file" },
+  { stat: "1", label: "job record that every transmittal, submittal, cert, and scan is filed against" },
+  { stat: "2", label: "phases, each on its own fixed fee work order" },
 ];
+
+// Fill in when Jewel supplies a quote. The block does not render while this is empty.
+const clientQuote = { text: "", name: "", title: "" };
 
 export default function JewelWeldingCaseStudy() {
   return (
@@ -62,7 +64,7 @@ export default function JewelWeldingCaseStudy() {
               Jewel Welding. Jipsi QC dashboard.
             </h1>
             <p className="text-lg text-zinc-400">
-              Structural steel fabrication and coatings, [CITY], BC. [HEADCOUNT] people. Phase 1 delivered [MONTH YEAR]. Phase 2 in progress.
+              Structural steel fabrication and coatings, Maple Ridge, BC. Phase 1 delivered 2026 and in daily use. Phase 2 in progress.
             </p>
           </div>
         </section>
@@ -77,7 +79,7 @@ export default function JewelWeldingCaseStudy() {
               <h2 className="mb-6 text-2xl font-semibold tracking-tight text-white md:text-3xl">The problem</h2>
               <div className="space-y-4 text-base leading-relaxed text-zinc-400">
                 <p>
-                  [CONFIRM WITH MATT OR PAUL. Draft:] QC records lived on paper travellers and in a spreadsheet maintained by the QC Manager. Inspection status for any given job meant walking the floor or asking. Certifications and mill certs were filed by hand and retrieved by memory. Nothing stopped a job from moving forward when an inspection had been missed.
+                  Five QC inspection forms lived on paper. Transmittals were assembled by hand. Welder qualifications, continuity, calibration dates, and personnel certifications were tracked in separate places and checked from memory. Nothing in the workflow stopped a welder from being assigned to a procedure he was not current on, and finding the status of any job&apos;s inspections meant walking the floor.
                 </p>
               </div>
             </div>
@@ -94,7 +96,7 @@ export default function JewelWeldingCaseStudy() {
                 ))}
               </ol>
               <p className="mt-6 text-base leading-relaxed text-zinc-400">
-                Phase 2 was scoped from the QC Manager&apos;s follow up notes after four weeks of daily use. Items include [TWO OR THREE PHASE 2 ITEMS].
+                Phase 2 was scoped from the QC Manager&apos;s follow up notes after the system was in daily use. Items include equipment downtime reporting and fleet dispatch with a truck departure checklist.
               </p>
             </div>
 
@@ -110,16 +112,16 @@ export default function JewelWeldingCaseStudy() {
               </div>
             </div>
 
-            <div className="border border-zinc-800 bg-zinc-900/30 p-8 md:p-10">
-              <p className="mb-4 text-4xl font-semibold leading-none text-blue-600">&ldquo;</p>
-              <p className="text-lg leading-relaxed text-zinc-200">
-                [QUOTE FROM PAUL DAVIDSON OR MATT SUDDABY, IN THEIR OWN WORDS, WITH PERMISSION]
-              </p>
-              <div className="mt-6 border-t border-zinc-800 pt-4">
-                <p className="text-sm font-semibold text-white">[NAME]</p>
-                <p className="text-xs text-zinc-500">[TITLE], Jewel Welding</p>
+            {clientQuote.text && (
+              <div className="border border-zinc-800 bg-zinc-900/30 p-8 md:p-10">
+                <p className="mb-4 text-4xl font-semibold leading-none text-blue-600">&ldquo;</p>
+                <p className="text-lg leading-relaxed text-zinc-200">{clientQuote.text}</p>
+                <div className="mt-6 border-t border-zinc-800 pt-4">
+                  <p className="text-sm font-semibold text-white">{clientQuote.name}</p>
+                  <p className="text-xs text-zinc-500">{clientQuote.title}, Jewel Welding</p>
+                </div>
               </div>
-            </div>
+            )}
 
             <div>
               <h2 className="mb-6 text-2xl font-semibold tracking-tight text-white md:text-3xl">Engagement structure</h2>

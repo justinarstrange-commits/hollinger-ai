@@ -315,10 +315,10 @@ export default function Home() {
                 </p>
                 <ul className="mb-10 space-y-3">
                   {[
-                    "Cross referencing of job numbers, drawing revisions, and inspection records",
-                    "Hold point gating so a job cannot advance without the inspection on file",
-                    "OCR intake for paper travellers and certifications",
-                    "Live QC status, blocked and overdue views",
+                    "Five QC inspection forms (QCF-100 to QCF-104) digitized with signed PDF output",
+                    "Welder qualification matcher that blocks an assignment when the qualification is not current",
+                    "Transmittal generator, document register, and submittal status in one place",
+                    "Scan to PDF for paper travellers and mill certs, filed against the job",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-base text-zinc-300">
                       <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
