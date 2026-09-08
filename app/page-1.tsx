@@ -67,23 +67,6 @@ const buildItems = [
   },
 ];
 
-const moreWork = [
-  {
-    client: "Craftsmen Contracting",
-    sector: "Renovation contractor",
-    summary:
-      "A job management system for a renovation business. Estimates and phases, a day sheet crews fill in from a phone, receipts, change orders, and a client review page. Built from the office manager\u2019s own requirements, one email at a time.",
-    items: ["Job list and intake", "Estimate and phase builder", "Day sheet and receipts capture", "Change orders with client review"],
-  },
-  {
-    client: "Cass MacLeod Real Estate Team",
-    sector: "Real estate",
-    summary:
-      "A command centre for a Maple Ridge realtor: lead generation, Google presence, and social media management in one place, so the agent spends the day with clients instead of dashboards.",
-    items: ["Lead capture and qualification", "Google Business presence", "Social media scheduling", "Single operator dashboard"],
-  },
-];
-
 const steps = [
   {
     number: "01",
@@ -117,7 +100,7 @@ const team = [
 const faqs = [
   {
     q: "We are not a tech company. Is this for us?",
-    a: "Yes. Every client runs a shop, a crew, or a client book, not a software team. The system is built around how your floor already works, and your team runs it without technical staff.",
+    a: "Yes. Every client so far runs a shop, not a software team. The system is built around how your floor already works, and your team runs it without technical staff.",
   },
   {
     q: "How long does a build take?",
@@ -301,7 +284,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Work */}
+        {/* Work / Proof */}
         <section id="work" className="border-t border-zinc-800 px-6 py-24 md:py-32">
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">Work</p>
@@ -338,40 +321,6 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[#0a0a0a]/30" />
               </div>
             </div>
-
-            <div className="mt-20 grid gap-px border border-zinc-800 bg-zinc-800 md:grid-cols-2">
-              {moreWork.map((w) => (
-                <div key={w.client} className="bg-[#0a0a0a] p-10">
-                  <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-blue-600">{w.sector}</p>
-                  <h3 className="mb-4 text-lg font-semibold text-white">{w.client}</h3>
-                  <p className="mb-6 text-base leading-relaxed text-zinc-400">{w.summary}</p>
-                  <ul className="space-y-2">
-                    {w.items.map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-sm text-zinc-300">
-                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-blue-500" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-10 flex flex-col gap-6 border border-zinc-800 bg-[#0a0a0a] p-8 md:flex-row md:items-start">
-              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full">
-                <Image src="/cass-headshot.jpg" alt="Cass MacLeod" fill className="object-cover" />
-              </div>
-              <div className="flex flex-col">
-                <p className="mb-4 text-4xl font-semibold leading-none text-blue-600">&ldquo;</p>
-                <p className="flex-1 text-base leading-relaxed text-zinc-300">
-                  I wish I would have had access to this years ago. Absolutely unbelievable what adding the AI does for generating leads. It works while I sleep and hands me qualified buyers ready to move. This changes everything.
-                </p>
-                <div className="mt-6 border-t border-zinc-800 pt-4">
-                  <p className="text-sm font-semibold text-white">Cass MacLeod</p>
-                  <p className="text-xs text-zinc-500">Cass MacLeod Real Estate Team · Maple Ridge, BC · Royal LePage Wolstencroft Realty</p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -394,7 +343,7 @@ export default function Home() {
             <div className="mt-16 max-w-2xl border-t border-zinc-800 pt-8">
               <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">Who this is for</p>
               <p className="text-base leading-relaxed text-zinc-400">
-                Fabrication, machining, and industrial shops first. Contractors, trades, and owner led service businesses in British Columbia that run on paper, spreadsheets, and one person\u2019s memory. If you are a software company looking for a subcontractor, this is not the right fit.
+                Fabrication, machining, and industrial shops in British Columbia, roughly 20 to 200 people, with a QC or operations manager who is tired of chasing paper. If you are a software company or a consultancy looking for a subcontractor, this is not the right fit.
               </p>
             </div>
           </div>

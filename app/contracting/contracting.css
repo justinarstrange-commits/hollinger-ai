@@ -1,0 +1,23 @@
+/* Scoped styles for the Craftsmen Contracting demo dashboard */
+
+.contracting-root {
+  font-family: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+}
+
+.contracting-root ::-webkit-scrollbar { width: 5px; height: 5px; }
+.contracting-root ::-webkit-scrollbar-track { background: #0f172a; }
+.contracting-root ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+.contracting-root ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+@keyframes cost-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.75; }
+}
+.cost-pulse {
+  animation: cost-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes ping-dot {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+.ping-dot { animation: ping-dot 1s cubic-bezier(0, 0, 0.2, 1) infinite; }

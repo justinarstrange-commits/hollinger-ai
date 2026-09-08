@@ -14,20 +14,56 @@ const geistMono = Geist_Mono({
 
 const url = "https://hollingerai.online";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://hollingerai.online/#organization",
+      "name": "Hollinger AI",
+      "url": "https://hollingerai.online",
+      "description": "Custom AI operations software for industrial and fabrication companies in British Columbia. A division of Hollinger Holdings Corporation.",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Hollinger Holdings Corporation",
+        "url": "https://www.hollinger-holdings.com"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Justin Strange",
+        "url": "https://justinstrange.site",
+        "jobTitle": "Founder"
+      },
+      "sameAs": ["https://www.hollinger-holdings.com"]
+    },
+    {
+      "@type": "Person",
+      "name": "Justin Strange",
+      "url": "https://justinstrange.site",
+      "jobTitle": "Founder",
+      "worksFor": { "@id": "https://hollingerai.online/#organization" },
+      "sameAs": ["https://justinstrange.site", "https://www.hollinger-holdings.com/leadership/"]
+    }
+  ]
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   verification: {
     google: "f-ku-NPU3c8qh4B3WalKDRXvgHh_yjOpmA0lvGkwxtU",
   },
   title: {
-    default: "Hollinger AI Power Solutions | Vancouver AI Integration",
+    default: "Hollinger AI | AI operations software for fabrication shops | Justin Strange",
     template: "%s | Hollinger AI",
   },
   description:
-    "Custom AI workflow integrations for manufacturing, logistics, construction, and operations businesses in Vancouver, BC and across Canada.",
+    "Hollinger AI builds custom AI operations software for fabrication and industrial shops in BC. Fixed fee, delivered in weeks, owned by you. Founded by Justin Strange. A division of Hollinger Holdings Corporation.",
+  keywords: ["Hollinger AI", "Justin Strange", "fabrication shop software", "QC dashboard", "Hollinger Holdings", "custom software Vancouver", "Justin Strange Hollinger"],
+  authors: [{ name: "Justin Strange", url: "https://justinstrange.site" }],
+  creator: "Justin Strange",
   openGraph: {
-    siteName: "Hollinger AI Power Solutions",
-    images: [{ url: "/hero.png", width: 1978, height: 1114, alt: "Hollinger AI Power Solutions" }],
+    siteName: "Hollinger AI",
+    images: [{ url: "/hero.png", width: 1978, height: 1114, alt: "Hollinger AI" }],
     type: "website",
     locale: "en_CA",
   },
@@ -47,6 +83,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

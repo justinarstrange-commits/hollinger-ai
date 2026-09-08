@@ -18,16 +18,16 @@ export async function generateMetadata({
   if (!post) return {};
   const BASE = "https://hollingerai.online";
   return {
-    title: `${post.title} | Hollinger AI Power Solutions`,
+    title: `${post.title} | Hollinger AI`,
     description: post.excerpt,
     keywords: ["AI integration", "Vancouver", "workflow automation", post.category],
-    authors: [{ name: "Hollinger AI Power Solutions", url: BASE }],
+    authors: [{ name: "Hollinger AI", url: BASE }],
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
       url: `${BASE}/blog/${slug}`,
-      siteName: "Hollinger AI Power Solutions",
+      siteName: "Hollinger AI",
       images: [{ url: `${BASE}/hero.png`, width: 1978, height: 1114, alt: post.title }],
       publishedTime: new Date(post.date).toISOString(),
     },
@@ -60,7 +60,7 @@ export default async function ArticlePage({
           <Link href="/">
             <Image
               src="/logo.png"
-              alt="Hollinger AI Power Solutions"
+              alt="Hollinger AI"
               width={148}
               height={40}
               className="object-contain"
@@ -158,7 +158,7 @@ export default async function ArticlePage({
       <footer className="border-t border-zinc-800 px-6 py-8">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <p className="text-xs text-zinc-600">
-            © 2026 Hollinger AI Power Solutions. All rights reserved.
+            © 2026 Hollinger AI. All rights reserved.
           </p>
           <p className="text-xs text-zinc-600">
             AI that works. We obsess over the rest.

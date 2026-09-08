@@ -363,7 +363,7 @@ function Header() {
         <Link href="/">
           <Image
             src="/logo.png"
-            alt="Hollinger AI Power Solutions"
+            alt="Hollinger AI"
             width={148}
             height={40}
             className="object-contain"
@@ -380,7 +380,7 @@ function Footer() {
     <footer className="border-t border-zinc-800 px-6 py-6">
       <div className="mx-auto max-w-6xl">
         <p className="text-xs text-zinc-600">
-          © 2026 Hollinger AI Power Solutions. All rights reserved.
+          © 2026 Hollinger AI. All rights reserved.
         </p>
       </div>
     </footer>

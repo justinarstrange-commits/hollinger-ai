@@ -5,12 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const links = [
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#how-it-works" },
-  { label: "Results", href: "#results" },
+  { label: "Work", href: "#work" },
+  { label: "How it works", href: "#how-it-works" },
   { label: "Team", href: "#team" },
   { label: "About", href: "#about" },
-  { label: "Insights", href: "/blog" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
@@ -42,7 +40,7 @@ export default function MobileNav() {
           <div className="flex items-center justify-between">
             <Image
               src="/logo.png"
-              alt="Hollinger AI Power Solutions"
+              alt="Hollinger AI"
               width={148}
               height={40}
               className="object-contain"
@@ -84,13 +82,13 @@ export default function MobileNav() {
           </nav>
 
           <div className="pb-8 pt-10 flex flex-col gap-3">
-            <Link
-              href="/diagnose"
+            <a
+              href="#contact"
               onClick={close}
               className="flex w-full items-center justify-center rounded-sm bg-blue-600 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500"
             >
-              Get a Quote
-            </Link>
+              Talk to Justin
+            </a>
             <a
               href="mailto:contact@hollingerai.online"
               className="flex w-full items-center justify-center rounded-sm border border-zinc-700 py-4 text-sm font-semibold uppercase tracking-widest text-zinc-300 transition-colors hover:text-white"

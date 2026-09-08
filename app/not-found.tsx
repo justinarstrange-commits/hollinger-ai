@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | Hollinger AI Power Solutions",
+  title: "Page Not Found | Hollinger AI",
 };
 
 export default function NotFound() {
@@ -14,7 +14,7 @@ export default function NotFound() {
           <Link href="/">
             <Image
               src="/logo.png"
-              alt="Hollinger AI Power Solutions"
+              alt="Hollinger AI"
               width={148}
               height={40}
               className="object-contain"
@@ -56,7 +56,7 @@ export default function NotFound() {
       <footer className="border-t border-zinc-800 px-6 py-6">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs text-zinc-600">
-            © 2026 Hollinger AI Power Solutions. All rights reserved.
+            © 2026 Hollinger AI. All rights reserved.
           </p>
         </div>
       </footer>

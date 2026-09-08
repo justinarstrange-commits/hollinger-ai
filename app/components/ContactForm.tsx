@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
   const [form, setForm] = useState({
     name: "",
     company: "",
@@ -15,16 +16,19 @@ export default function ContactForm() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(
-      `Enquiry from ${form.name}${form.company ? ` — ${form.company}` : ""}`
-    );
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\n\n${form.message}`
-    );
-    window.location.href = `mailto:contact@hollingerai.online?subject=${subject}&body=${body}`;
-    setSent(true);
+    setSending(true);
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      setSent(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   const inputClass =
@@ -110,9 +114,10 @@ export default function ContactForm() {
       </div>
       <button
         type="submit"
-        className="w-full rounded-sm bg-blue-600 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500 sm:w-auto sm:px-10"
+        disabled={sending}
+        className="w-full rounded-sm bg-blue-600 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500 disabled:opacity-50 sm:w-auto sm:px-10"
       >
-        Send Message
+        {sending ? "Sending..." : "Send Message"}
       </button>
     </form>
   );

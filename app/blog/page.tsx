@@ -4,9 +4,9 @@ import Link from "next/link";
 import { posts } from "./posts";
 
 export const metadata: Metadata = {
-  title: "Insights | Hollinger AI Power Solutions",
+  title: "Insights | Hollinger AI",
   description:
-    "Perspectives on enterprise AI deployment, workflow integration, and operational transformation.",
+    "Perspectives on enterprise AI deployment, workflow integration, and operations.",
 };
 
 export default function BlogIndex() {
@@ -17,7 +17,7 @@ export default function BlogIndex() {
           <Link href="/">
             <Image
               src="/logo.png"
-              alt="Hollinger AI Power Solutions"
+              alt="Hollinger AI"
               width={148}
               height={40}
               className="object-contain"
@@ -84,7 +84,7 @@ export default function BlogIndex() {
       <footer className="border-t border-zinc-800 px-6 py-8">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <p className="text-xs text-zinc-600">
-            © 2026 Hollinger AI Power Solutions. All rights reserved.
+            © 2026 Hollinger AI. All rights reserved.
           </p>
           <p className="text-xs text-zinc-600">
             AI that works. We obsess over the rest.
