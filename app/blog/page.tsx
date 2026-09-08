@@ -52,7 +52,7 @@ export default function BlogIndex() {
         </div>
 
         <div className="grid gap-px border border-zinc-800 bg-zinc-800 md:grid-cols-2">
-          {posts.map((post) => (
+          {[...posts].reverse().map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
