@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE}/diagnose`,
+      url: `${BASE}/work/jewel-welding`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
