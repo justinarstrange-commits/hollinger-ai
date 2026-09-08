@@ -71,6 +71,7 @@ const moreWork = [
   {
     client: "Craftsmen Contracting",
     sector: "Renovation contractor",
+    logo: "/craftsmen-logo.png",
     summary:
       "A job management system for a renovation business. Estimates and phases, a day sheet crews fill in from a phone, receipts, change orders, and a client review page. Built from the office manager\u2019s own requirements, one email at a time.",
     items: ["Job list and intake", "Estimate and phase builder", "Day sheet and receipts capture", "Change orders with client review"],
@@ -78,6 +79,7 @@ const moreWork = [
   {
     client: "Cass MacLeod Real Estate Team",
     sector: "Real estate",
+    logo: "/cass-headshot.jpg",
     summary:
       "A command centre for a Maple Ridge realtor: lead generation, Google presence, and social media management in one place, so the agent spends the day with clients instead of dashboards.",
     items: ["Lead capture and qualification", "Google Business presence", "Social media scheduling", "Single operator dashboard"],
@@ -342,8 +344,15 @@ export default function Home() {
             <div className="mt-20 grid gap-px border border-zinc-800 bg-zinc-800 md:grid-cols-2">
               {moreWork.map((w) => (
                 <div key={w.client} className="bg-[#0a0a0a] p-10">
-                  <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-blue-600">{w.sector}</p>
-                  <h3 className="mb-4 text-lg font-semibold text-white">{w.client}</h3>
+                  <div className="mb-5 flex items-center gap-4">
+                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full bg-zinc-900">
+                      <Image src={w.logo} alt={w.client} fill className="object-cover" />
+                    </div>
+                    <div>
+                      <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-blue-600">{w.sector}</p>
+                      <h3 className="text-lg font-semibold text-white">{w.client}</h3>
+                    </div>
+                  </div>
                   <p className="mb-6 text-base leading-relaxed text-zinc-400">{w.summary}</p>
                   <ul className="space-y-2">
                     {w.items.map((item) => (

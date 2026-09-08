@@ -21,7 +21,7 @@ export async function generateMetadata({
     title: `${post.title} | Hollinger AI`,
     description: post.excerpt,
     keywords: ["AI integration", "Vancouver", "workflow automation", post.category],
-    authors: [{ name: "Hollinger AI", url: BASE }],
+    authors: [{ name: "Justin Strange", url: "https://justinstrange.site" }],
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -53,8 +53,21 @@ export default async function ArticlePage({
   const prev = posts[index - 1] ?? null;
   const next = posts[index + 1] ?? null;
 
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: new Date(post.date).toISOString(),
+    author: { "@type": "Person", name: "Justin Strange", url: "https://justinstrange.site" },
+    publisher: { "@type": "Organization", name: "Hollinger AI", url: "https://hollingerai.online", logo: { "@type": "ImageObject", url: "https://hollingerai.online/logo.png" } },
+    mainEntityOfPage: `https://hollingerai.online/blog/${slug}`,
+    image: "https://hollingerai.online/hero.png",
+  };
+
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-zinc-800 bg-[#0a0a0a]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/">
