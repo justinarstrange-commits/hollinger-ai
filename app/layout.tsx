@@ -22,6 +22,7 @@ const jsonLd = {
       "@id": "https://hollingerai.online/#organization",
       "name": "Hollinger AI",
       "url": "https://hollingerai.online",
+      "slogan": "Applied AI Performance Systems",
       "description": "Custom AI operations software for industrial and fabrication companies in British Columbia. A division of Hollinger Holdings Corporation.",
       "parentOrganization": {
         "@type": "Organization",

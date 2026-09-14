@@ -9,12 +9,23 @@ in doubt, follow this file over anything in existing copy.
 The client facing brand name is "Hollinger AI" only.
 
 Do not use "Power Solutions", "Power Systems", "Solutions", or any other suffix.
-Do not attach a tagline. "Applied AI Performance Systems" is retired and must not
-appear in copy, titles, alt text, keywords, or schema fields.
 
 Use "Hollinger AI" in page titles, footers, image alt text, Open Graph and
 Twitter siteName, and the Schema.org organization name. Do not set an
 alternateName that repeats or extends the brand.
+
+## Tagline (locked)
+
+The tagline is "Applied AI Performance Systems", exactly as written here. This
+wording is final and is not to be paraphrased, shortened, reworded, or replaced
+with a substitute description ("operations software for fabrication shops" and
+similar are SEO description copy, not the tagline, and must not stand in for it).
+
+Every session and every property (this site and hollinger-holdings.com) uses
+this exact string wherever a tagline or slogan is called for: footers, the
+Schema.org organization "slogan" field, and portfolio-listing taglines. If you
+are about to write anything that functions as a tagline for Hollinger AI, use
+this string verbatim. Do not invent a new one.
 
 ## Legal entity
 

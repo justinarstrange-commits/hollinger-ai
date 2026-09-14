@@ -540,7 +540,10 @@ export default function Home() {
           <div className="grid gap-12 md:grid-cols-3">
             <div>
               <Image src="/logo.png" alt="Hollinger AI" width={130} height={36} className="mb-4 object-contain" />
-              <p className="text-sm leading-relaxed text-zinc-500">
+              <p className="text-xs font-semibold uppercase tracking-widest text-zinc-600">
+                Applied AI Performance Systems
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-500">
                 Custom AI operations software for fabrication and industrial shops.
               </p>
               <a
