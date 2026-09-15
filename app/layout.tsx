@@ -54,12 +54,12 @@ export const metadata: Metadata = {
     google: "f-ku-NPU3c8qh4B3WalKDRXvgHh_yjOpmA0lvGkwxtU",
   },
   title: {
-    default: "Hollinger AI | AI operations software for fabrication shops | Justin Strange",
+    default: "Hollinger AI | Applied AI Performance Systems",
     template: "%s | Hollinger AI",
   },
   description:
-    "Hollinger AI builds custom AI operations software for fabrication and industrial shops in BC. Fixed fee, delivered in weeks, owned by you. Founded by Justin Strange. A division of Hollinger Holdings Corporation.",
-  keywords: ["Hollinger AI", "Justin Strange", "fabrication shop software", "QC dashboard", "Hollinger Holdings", "custom software Vancouver", "Justin Strange Hollinger"],
+    "Hollinger AI builds custom AI operations software for industrial and trades businesses in BC. Fixed fee, delivered in weeks, owned by you. A division of Hollinger Holdings Corporation.",
+  keywords: ["Hollinger AI", "Justin Strange", "AI operations software", "custom software BC", "QC dashboard", "Hollinger Holdings", "custom software Vancouver"],
   authors: [{ name: "Justin Strange", url: "https://justinstrange.site" }],
   creator: "Justin Strange",
   openGraph: {

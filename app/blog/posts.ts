@@ -330,40 +330,6 @@ export const posts: Post[] = [
       "A dental practice with three chairs and a busy schedule is running a more complex operation than most people outside the industry appreciate. The administrative overhead is real, the staff cost is significant, and the technology most practices are running was not designed to reduce either. If your front desk is overwhelmed and your recall list is a source of anxiety rather than a revenue tool, that is a solvable problem. We have built this for healthcare operations before and the timeline to production is shorter than you would expect.",
     ],
   },
-  {
-    slug: "what_a_fabrication_shop_needs_from_software",
-    title: "What a Fabrication Shop Actually Needs From Software",
-    date: "September 8, 2026",
-    category: "Fabrication",
-    readTime: "5 min read",
-    excerpt:
-      "Not a platform. Not a transformation. The six things a shop does every day, connected, with a hard stop when an inspection is missed.",
-    content: [
-      "Walk into almost any fabrication shop in the Lower Mainland and you will find the same three systems. The ERP, which the office uses for quoting and invoicing. A spreadsheet the QC manager built years ago that nobody else fully understands. And the paper traveller, which is the only thing the floor actually trusts.",
-      "None of the three talk to each other. Every gap between them is filled by one person's memory. That person knows which welder is current on which procedure, which calibration is due, which job is waiting on a fit up inspection, and where the mill cert for last Tuesday's plate ended up. When that person is on vacation, the shop runs slower and takes more risk, and everyone knows it.",
-      "The software vendors who call on these shops mostly sell one of two things. A bigger ERP, which moves the office problem around and leaves the floor on paper. Or a quality management platform built for aerospace primes, priced accordingly, with a six month implementation and a consultant on retainer.",
-      "What the shop needs is neither. It needs the six things it does every day to be connected, and a hard stop when an inspection is missed. That is a small piece of software. It is also a very specific one, which is why product companies do not build it and consultancies do not price it sanely.",
-      "At a structural steel fabricator in Maple Ridge, the Phase 1 build came to ten items. Five paper inspection forms became digital forms with signed PDF output. A welder qualification matcher blocks an assignment when the qualification is not current. Transmittals generate from the job record instead of being assembled by hand. Paper travellers and mill certs get scanned, named by job, and filed where the job lives. A continuity tracker surfaces lapsed qualifications before a weld, not after.",
-      "None of that is artificial intelligence in the way the trade press means it. Most of it is plain logic applied to the shop's own rules. The AI does the parts humans are bad at: reading a scanned cert, matching a welder's ticket to a procedure across three naming conventions, noticing that a calibration date passed. The humans keep the judgment.",
-      "If you run a shop and you want to know whether this applies to you, the test is simple. Ask your QC manager how long it takes to find the inspection status of any job on the floor right now. If the answer involves walking, that is the gap. It is a few weeks of work to close, not a transformation.",
-    ],
-  },
-  {
-    slug: "safety_gating_as_software",
-    title: "Safety Gating as Software: The Button That Does Not Exist",
-    date: "September 8, 2026",
-    category: "Fabrication",
-    readTime: "4 min read",
-    excerpt:
-      "The most valuable feature in a QC system is a refusal. Not a warning, not a banner. The next step is unavailable until the record is on file.",
-    content: [
-      "Every shop already knows which inspections matter. Cut in, fit up, welding, bolt up in the field. The QC manual says so, the customer spec says so, and the traveller has a box for each. What most shops lack is anything that physically stops a rushed Friday afternoon from skipping one.",
-      "Software people call this validation. On a fab floor it is the difference between a rework ticket and a callback from site. The principle is simple: a job cannot advance past a hold point until the required inspection, sign off, or document is on file. Not a warning that someone clicks through. Not a yellow banner. The button to move the job forward does not exist until the record does.",
-      "The same logic applies to people. A welder should not be assigned to a procedure he is not current on. In most shops that check lives in the foreman's head and a binder of tickets. In software it is a lookup: this welder, this procedure, this date. If the qualification is lapsed, the assignment is refused and the reason is shown. The foreman still makes the call about who welds what. The system just will not let a lapsed ticket through by accident.",
-      "There is a cultural objection to this, and it is worth taking seriously. Shops run on trust and speed, and nobody wants software second guessing a thirty year welder. The answer is that gating is not about trust. It is about the one time in two hundred when the paperwork got ahead of the work, and the gate catches what the person would have caught on any other day.",
-      "The build cost of gating is low because the rules already exist. The shop wrote them. The work is encoding them faithfully and putting the refusal at the right point in the workflow, where it blocks the mistake without blocking the shop. Get that placement wrong and the floor routes around the system inside a week. Get it right and nobody notices it until the day it saves a shipment.",
-    ],
-  },
 ];
 
 export function getPost(slug: string): Post | undefined {

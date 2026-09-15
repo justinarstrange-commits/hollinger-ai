@@ -5,7 +5,17 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/work/jewel-welding",
-        destination: "/work/fabrication-qc",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/work/fabrication-qc",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/fabrication",
+        destination: "/",
         permanent: true,
       },
     ];

@@ -1,26 +1,24 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import MobileNav from "./components/MobileNav";
 import ContactForm from "./components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Hollinger AI | AI operations software for fabrication shops",
+  title: "Hollinger AI | Applied AI Performance Systems",
   description:
-    "Custom AI operations software for industrial and fabrication companies in BC. Cross referencing, safety gating, OCR digitization, and QC dashboards. Fixed fee builds, delivered in weeks, owned by you.",
+    "Hollinger AI builds custom AI operations software for industrial and trades businesses in British Columbia. Fixed fee builds, delivered in weeks, owned by you.",
   keywords: [
-    "fabrication shop software BC",
-    "QC dashboard fabrication",
-    "quality control software welding shop",
-    "AI operations software manufacturing",
-    "custom software fabrication Vancouver",
+    "AI operations software BC",
+    "custom software Vancouver",
+    "QC dashboard software",
+    "workflow automation BC",
     "Hollinger AI",
     "Justin Strange",
   ],
   openGraph: {
-    title: "Hollinger AI | AI operations software for fabrication shops",
+    title: "Hollinger AI | Applied AI Performance Systems",
     description:
-      "Custom operations software for fabrication and industrial shops in BC. Fixed fee, delivered in weeks, you own the code.",
+      "Custom AI operations software for industrial and trades businesses in BC. Fixed fee, delivered in weeks, you own the code.",
     url: "https://hollingerai.online",
     siteName: "Hollinger AI",
     images: [{ url: "/hero.png", width: 1978, height: 1114, alt: "Hollinger AI" }],
@@ -30,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hollinger AI",
-    description: "Custom operations software for fabrication shops. Fixed fee, delivered in weeks.",
+    description: "Custom AI operations software for industrial and trades businesses. Fixed fee, delivered in weeks.",
     images: ["/hero.png"],
   },
 };
@@ -73,7 +71,7 @@ const moreWork = [
     sector: "Renovation contractor",
     logo: "/craftsmen-logo.png",
     summary:
-      "A job management system for a renovation business. Estimates and phases, a day sheet crews fill in from a phone, receipts, change orders, and a client review page. Built from the office manager\u2019s own requirements, one email at a time.",
+      "A job management system for a renovation business. Estimates and phases, a day sheet crews fill in from a phone, receipts, change orders, and a client review page. Built from the office manager's own requirements, one email at a time.",
     items: ["Job list and intake", "Estimate and phase builder", "Day sheet and receipts capture", "Change orders with client review"],
   },
   {
@@ -83,6 +81,14 @@ const moreWork = [
     summary:
       "A command centre for a Maple Ridge realtor: lead generation, Google presence, and social media management in one place, so the agent spends the day with clients instead of dashboards.",
     items: ["Lead capture and qualification", "Google Business presence", "Social media scheduling", "Single operator dashboard"],
+  },
+  {
+    client: "Structural Fabrication Shop",
+    sector: "Fabrication & coatings",
+    logo: "/logo.png",
+    summary:
+      "A ten item QC system for a structural steel fabrication shop in the Lower Mainland: digitized inspection forms, a welder qualification matcher, a transmittal generator, and a live QC dashboard. Delivered on a fixed fee work order and in daily use.",
+    items: ["Digitized QC inspection forms with signed PDF output", "Welder qualification matcher", "Transmittal generator and document register", "Scan to PDF for travellers and mill certs"],
   },
 ];
 
@@ -244,17 +250,17 @@ export default function Home() {
           <div className="relative z-10 flex flex-col items-center">
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">HOLLINGER AI</p>
             <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
-              Custom AI operations software for fabrication shops.
+              Applied AI Performance Systems.
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-zinc-300 md:text-xl">
-              Quality control, job tracking, document digitization, and the logic that connects them. Built for your shop, fixed fee, delivered in weeks. You own the code.
+              Quality control, job tracking, document digitization, and the logic that connects them. Built for your operation, fixed fee, delivered in weeks. You own the code.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
               <a
                 href="#work"
                 className="rounded-sm bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500"
               >
-                See the fabrication shop build
+                See our work
               </a>
               <a href="#contact" className="text-sm font-medium uppercase tracking-wider text-zinc-300 transition-colors hover:text-white">
                 Talk to Justin
@@ -275,10 +281,10 @@ export default function Home() {
               </div>
               <div className="space-y-5 text-base leading-relaxed text-zinc-400">
                 <p>
-                  Most fabrication shops run on paper travellers, spreadsheets, and whatever the ERP will not do. The gaps between those systems are where rework, missed inspections, and late paperwork come from.
+                  Most shops and trades businesses run on paper, spreadsheets, and whatever the ERP will not do. The gaps between those systems are where rework, missed inspections, and late paperwork come from.
                 </p>
                 <p>
-                  Hollinger AI builds the system that closes those gaps. One person scopes it, builds it, and supports it. No account manager, no offshore team, no subscription that holds your data hostage.
+                  Hollinger AI builds the system that closes those gaps, scoped and built for your operation. No account manager, no offshore team, no subscription that holds your data hostage.
                 </p>
               </div>
             </div>
@@ -307,41 +313,11 @@ export default function Home() {
         <section id="work" className="border-t border-zinc-800 px-6 py-24 md:py-32">
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">Work</p>
-            <div className="grid items-start gap-16 md:grid-cols-2">
-              <div>
-                <h2 className="mb-6 text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
-                  Structural fabrication shop. Jipsi QC dashboard.
-                </h2>
-                <p className="mb-6 text-base leading-relaxed text-zinc-400">
-                  A ten item Phase 1 build for a structural steel fabrication shop in the Lower Mainland, delivered on a fixed fee work order and in daily use. Phase 2 was scoped from the QC Manager&apos;s own follow up requests after four weeks on the floor.
-                </p>
-                <ul className="mb-10 space-y-3">
-                  {[
-                    "Five QC inspection forms (QCF-100 to QCF-104) digitized with signed PDF output",
-                    "Welder qualification matcher that blocks an assignment when the qualification is not current",
-                    "Transmittal generator, document register, and submittal status in one place",
-                    "Scan to PDF for paper travellers and mill certs, filed against the job",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-base text-zinc-300">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/work/fabrication-qc"
-                  className="inline-flex rounded-sm bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500"
-                >
-                  Read the case study
-                </Link>
-              </div>
-              <div className="relative min-h-[360px] overflow-hidden border border-zinc-800 bg-zinc-900">
-                <Image src="/results.png" alt="Jipsi QC dashboard" fill className="object-cover object-center" />
-                <div className="absolute inset-0 bg-[#0a0a0a]/30" />
-              </div>
-            </div>
+            <h2 className="mb-16 max-w-xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
+              Fixed fee builds, delivered and in daily use.
+            </h2>
 
-            <div className="mt-20 grid gap-px border border-zinc-800 bg-zinc-800 md:grid-cols-2">
+            <div className="grid gap-px border border-zinc-800 bg-zinc-800 md:grid-cols-2">
               {moreWork.map((w) => (
                 <div key={w.client} className="bg-[#0a0a0a] p-10">
                   <div className="mb-5 flex items-center gap-4">
@@ -403,7 +379,7 @@ export default function Home() {
             <div className="mt-16 max-w-2xl border-t border-zinc-800 pt-8">
               <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">Who this is for</p>
               <p className="text-base leading-relaxed text-zinc-400">
-                Fabrication, machining, and industrial shops first. Contractors, trades, and owner led service businesses in British Columbia that run on paper, spreadsheets, and one person\u2019s memory. If you are a software company looking for a subcontractor, this is not the right fit.
+                Shops, contractors, trades, and owner led service businesses in British Columbia that run on paper, spreadsheets, and one person&apos;s memory. If you are a software company looking for a subcontractor, this is not the right fit.
               </p>
             </div>
           </div>
@@ -453,11 +429,11 @@ export default function Home() {
                 </h2>
                 <div className="space-y-5 text-base leading-relaxed text-zinc-400">
                   <p>
-                    Hollinger AI exists because the software fabrication shops actually need is too specific for a product company to build and too small for a consultancy to price sanely. A shop with 60 people does not need an enterprise QMS. It needs the six things it does every day to talk to each other, and a hard stop when an inspection is missed.
+                    Hollinger AI exists because the software operations businesses actually need is too specific for a product company to build and too small for a consultancy to price sanely. A shop with 60 people does not need an enterprise QMS. It needs the things it does every day to talk to each other, and a hard stop when a step gets missed.
                   </p>
                   <p>
                     <a href="https://justinstrange.site" target="_blank" rel="noopener noreferrer" className="text-zinc-300 underline underline-offset-2 transition-colors hover:text-white">Justin Strange</a>
-                    {" "}has been self employed since 2004 and does the work himself: scoping, building, deploying, supporting.
+                    {" "}has been self employed since 2004 and leads every engagement personally, scoping and building each system with a small team handling operations, engineering, and client success.
                   </p>
                   <p>
                     Hollinger AI is a division of Hollinger Holdings Corporation, Vancouver, BC.
