@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/work/jewel-welding",
+        destination: "/work/fabrication-qc",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

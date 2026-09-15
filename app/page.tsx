@@ -123,7 +123,7 @@ const faqs = [
   },
   {
     q: "How long does a build take?",
-    a: "Phase 1 at Jewel Welding went from signed work order to daily use in [N] weeks. Most first builds land in a similar range. You get a date in the scope, not an estimate.",
+    a: "Phase 1 for a recent fabrication client went from signed work order to daily use in [N] weeks. Most first builds land in a similar range. You get a date in the scope, not an estimate.",
   },
   {
     q: "Does it work with our existing software?",
@@ -254,7 +254,7 @@ export default function Home() {
                 href="#work"
                 className="rounded-sm bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500"
               >
-                See the Jewel Welding build
+                See the fabrication shop build
               </a>
               <a href="#contact" className="text-sm font-medium uppercase tracking-wider text-zinc-300 transition-colors hover:text-white">
                 Talk to Justin
@@ -310,7 +310,7 @@ export default function Home() {
             <div className="grid items-start gap-16 md:grid-cols-2">
               <div>
                 <h2 className="mb-6 text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
-                  Jewel Welding. Jipsi QC dashboard.
+                  Structural fabrication shop. Jipsi QC dashboard.
                 </h2>
                 <p className="mb-6 text-base leading-relaxed text-zinc-400">
                   A ten item Phase 1 build for a structural steel fabrication shop in the Lower Mainland, delivered on a fixed fee work order and in daily use. Phase 2 was scoped from the QC Manager&apos;s own follow up requests after four weeks on the floor.
@@ -329,7 +329,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <Link
-                  href="/work/jewel-welding"
+                  href="/work/fabrication-qc"
                   className="inline-flex rounded-sm bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500"
                 >
                   Read the case study

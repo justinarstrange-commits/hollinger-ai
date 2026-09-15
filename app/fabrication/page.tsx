@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "ERP vs AI — A Briefing for Jewel Welding | Hollinger AI",
+  title: "ERP vs AI — A Briefing for Fabrication Shops | Hollinger AI",
   description:
     "An honest comparison of traditional ERP systems and AI integration for fabrication and manufacturing operations.",
 };
@@ -26,7 +26,7 @@ export default function FabricationPage() {
 
           <div className="max-w-4xl">
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.25em] text-zinc-500">
-              Prepared for Jewel Welding Fabrication and Coatings Ltd. · Maple Ridge, BC
+              An Operations Briefing · Fabrication &amp; Manufacturing
             </p>
             <h1 className="mb-8 text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-7xl">
               Operations software<br />
@@ -110,7 +110,7 @@ export default function FabricationPage() {
                   Hollinger AI is not a replacement for ERP. It is a different kind of system entirely. Where ERP records and organizes, AI learns and acts. Where ERP requires your team to adapt to software, this system adapts to your team.
                 </p>
                 <p className="text-sm leading-relaxed">
-                  Every job processed teaches it more about how Jewel operates. Every quote built makes the next one more accurate. The system does not stay the same year after year. It compounds.
+                  Every job processed teaches it more about how your operation runs. Every quote built makes the next one more accurate. The system does not stay the same year after year. It compounds.
                 </p>
                 <p className="text-sm leading-relaxed text-zinc-200 font-medium">
                   The question is not whether ERP is good software. The question is whether good software from thirty years ago is the right tool for where your business is going.
@@ -129,7 +129,7 @@ export default function FabricationPage() {
                   </ul>
                 </div>
                 <div className="border border-blue-900/20 bg-blue-950/5 p-5">
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-blue-600">What this means for Jewel specifically</p>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-blue-600">What this means for your shop specifically</p>
                   <ul className="space-y-2">
                     {["Quotes built on live pricing, not last month's list", "Estimator hours recovered and redeployed", "Bids you were passing on become bids you win", "Margin surprises stop happening", "One system across office, shop, and field"].map((item) => (
                       <li key={item} className="flex items-start gap-2">
@@ -312,7 +312,7 @@ export default function FabricationPage() {
             </h3>
             <div className="grid gap-8 md:grid-cols-3">
               {[
-                { title: "It learns your operation", body: "Every RFQ processed, every quote built, every job completed teaches the system more about how Jewel works. An ERP from year one looks identical to an ERP from year five. An AI system from year five is five years smarter than the one from year one." },
+                { title: "It learns your operation", body: "Every RFQ processed, every quote built, every job completed teaches the system more about how your shop works. An ERP from year one looks identical to an ERP from year five. An AI system from year five is five years smarter than the one from year one." },
                 { title: "It improves without intervention", body: "ERP requires you to call a consultant every time something needs to change. AI self-corrects, re-calibrates, and flags anomalies automatically. The system maintains itself. Your team does not." },
                 { title: "The gap compounds", body: "Every quarter a competitor runs on AI-assisted quoting while you run on manual estimates is a quarter they are pricing more accurately and winning jobs at margins you cannot see. That gap does not stay static. It widens." },
               ].map((item) => (
@@ -341,7 +341,7 @@ export default function FabricationPage() {
             <span className="text-zinc-500">But their own customers tell the same story.</span>
           </h2>
           <p className="mb-16 max-w-2xl text-base leading-relaxed text-zinc-500">
-            These are verified reviews from actual users of the three systems Matt asked about. Not our words. Theirs.
+            These are verified reviews from actual users of three widely used systems. Not our words. Theirs.
           </p>
 
           {/* JobBoss2 */}
@@ -424,7 +424,7 @@ export default function FabricationPage() {
             {[
               {
                 headline: "Your team quotes more. And wins more.",
-                body: "Right now, estimator capacity is the ceiling on how many bids Jewel can chase. Every RFQ that comes in when your estimators are buried is a job that goes to someone else. Remove the manual overhead and that ceiling lifts. More bids out means more contracts in. The ones you win are priced on accurate numbers, not hopeful ones.",
+                body: "Right now, estimator capacity is the ceiling on how many bids you can chase. Every RFQ that comes in when your estimators are buried is a job that goes to someone else. Remove the manual overhead and that ceiling lifts. More bids out means more contracts in. The ones you win are priced on accurate numbers, not hopeful ones.",
                 metric: "$45K+",
                 metricLabel: "Estimator capacity recovered per year",
               },
@@ -498,7 +498,7 @@ export default function FabricationPage() {
                   <span className="text-xs font-semibold uppercase tracking-widest text-green-400">Live</span>
                 </div>
                 <span className="text-xs text-zinc-700">|</span>
-                <span className="text-xs text-zinc-500">Jewel Welding Fabrication and Coatings</span>
+                <span className="text-xs text-zinc-500">Sample Fabrication Shop</span>
               </div>
               <span className="text-xs tabular-nums text-zinc-700">Updated every 30 seconds</span>
             </div>
@@ -527,11 +527,11 @@ export default function FabricationPage() {
                 <p className="mb-5 text-xs font-semibold uppercase tracking-widest text-zinc-600">Job Pipeline</p>
                 <div className="space-y-3">
                   {[
-                    { job: "JW-2841 · Structural Steel Package", status: "In Fabrication", pct: 68, color: "bg-blue-600" },
-                    { job: "JW-2844 · Industrial Coating Run", status: "Awaiting Materials", pct: 22, color: "bg-amber-500" },
-                    { job: "JW-2847 · Custom Handrail System", status: "Quoting", pct: 10, color: "bg-zinc-600" },
-                    { job: "JW-2839 · Tank Lining Contract", status: "QC Review", pct: 91, color: "bg-green-600" },
-                    { job: "JW-2833 · Mezzanine Structure", status: "Invoiced", pct: 100, color: "bg-zinc-700" },
+                    { job: "FAB-2841 · Structural Steel Package", status: "In Fabrication", pct: 68, color: "bg-blue-600" },
+                    { job: "FAB-2844 · Industrial Coating Run", status: "Awaiting Materials", pct: 22, color: "bg-amber-500" },
+                    { job: "FAB-2847 · Custom Handrail System", status: "Quoting", pct: 10, color: "bg-zinc-600" },
+                    { job: "FAB-2839 · Tank Lining Contract", status: "QC Review", pct: 91, color: "bg-green-600" },
+                    { job: "FAB-2833 · Mezzanine Structure", status: "Invoiced", pct: 100, color: "bg-zinc-700" },
                   ].map((j) => (
                     <div key={j.job}>
                       <div className="mb-1.5 flex items-center justify-between">
@@ -553,8 +553,8 @@ export default function FabricationPage() {
                   {[
                     { type: "price", msg: "Steel HR sheet up 4.2%. 3 open quotes affected. Reviewed automatically.", time: "4 min ago", dot: "bg-amber-500" },
                     { type: "rfq", msg: "RFQ received. Material takeoff running. Quote ready in approx 18 min.", time: "11 min ago", dot: "bg-blue-500" },
-                    { type: "margin", msg: "JW-2841 margin holding at 33.1%. No action required.", time: "22 min ago", dot: "bg-green-500" },
-                    { type: "flag", msg: "JW-2844 material delay flagged. Estimated 2-day impact on schedule.", time: "1 hr ago", dot: "bg-red-500" },
+                    { type: "margin", msg: "FAB-2841 margin holding at 33.1%. No action required.", time: "22 min ago", dot: "bg-green-500" },
+                    { type: "flag", msg: "FAB-2844 material delay flagged. Estimated 2-day impact on schedule.", time: "1 hr ago", dot: "bg-red-500" },
                     { type: "rfq", msg: "After-hours RFQ processed and drafted. Awaiting estimator review.", time: "3 hrs ago", dot: "bg-blue-500" },
                   ].map((a, i) => (
                     <div key={i} className="flex items-start gap-3 border-b border-zinc-900 pb-3 last:border-0 last:pb-0">
@@ -573,7 +573,7 @@ export default function FabricationPage() {
             <div className="grid border-zinc-800 sm:grid-cols-3">
               {[
                 { label: "Shop Floor", status: "All stations active", indicator: "bg-green-500" },
-                { label: "Field Crews", status: "2 of 2 on site · JW-2839", indicator: "bg-green-500" },
+                { label: "Field Crews", status: "2 of 2 on site · FAB-2839", indicator: "bg-green-500" },
                 { label: "After Hours Coverage", status: "AI agents active · No gaps", indicator: "bg-blue-500" },
               ].map((s) => (
                 <div key={s.label} className="flex items-center justify-between border-r border-t border-zinc-800 px-6 py-4 last:border-r-0">
@@ -592,15 +592,15 @@ export default function FabricationPage() {
           </div>
 
           <p className="mt-6 text-xs leading-relaxed text-zinc-700">
-            This is a representation of the live management view. Actual data reflects Jewel&apos;s jobs, materials, and crew in real time. ERP systems do not have a view like this. They never did.
+            This is a representation of the live management view. Actual data reflects your jobs, materials, and crew in real time. ERP systems do not have a view like this. They never did.
           </p>
         </div>
       </section>
 
-      {/* ─── SECTION 07: WHAT THIS MEANS FOR JEWEL ─── */}
+      {/* ─── SECTION 07: WHAT THIS MEANS FOR YOUR SHOP ─── */}
       <section className="border-t border-zinc-800 px-6 py-24 md:py-32">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">07 · What This Means for Jewel</p>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">07 · What This Means for Your Shop</p>
           <h2 className="mb-16 text-3xl font-semibold leading-tight tracking-tight text-white md:text-5xl">
             Your operation runs across<br />three surfaces. Right now,<br />
             <span className="text-zinc-500">they talk through inboxes and memory.</span>
@@ -661,7 +661,7 @@ export default function FabricationPage() {
                   <p className="text-3xl font-semibold text-white">2–4 hours</p>
                 </div>
               </div>
-              <p className="mt-4 text-xs text-zinc-600">Based on Jewel&apos;s actual workflow from the discovery questionnaire</p>
+              <p className="mt-4 text-xs text-zinc-600">Based on a recent Phase 1 build</p>
             </div>
 
             <div className="bg-[#0a0a0a] px-8 py-10">
@@ -686,13 +686,13 @@ export default function FabricationPage() {
           </h2>
           <div className="mb-12 space-y-4 text-zinc-400">
             <p className="text-lg leading-relaxed">
-              The ERP systems Matt asked about are good at what they were built to do. They were built to organize data. That problem is solved, and they solve it adequately.
+              These ERP systems are good at what they were built to do. They were built to organize data. That problem is solved, and they solve it adequately.
             </p>
             <p className="text-lg leading-relaxed">
               What they cannot do, and were never designed to do, is learn. Every quote built on an ERP system this year looks exactly like a quote built on that same system ten years from now. The software does not change because you changed. It does not improve because your business improved.
             </p>
             <p className="text-lg font-medium leading-relaxed text-zinc-200">
-              The system we build for Jewel is the opposite of that. It learns your jobs. It learns your materials, your labour, your margin patterns. The more you run through it, the smarter it gets. It never stops.
+              The system we build for your shop is the opposite of that. It learns your jobs. It learns your materials, your labour, your margin patterns. The more you run through it, the smarter it gets. It never stops.
             </p>
           </div>
 
@@ -712,7 +712,7 @@ export default function FabricationPage() {
       <div className="border-t border-zinc-800/50 px-6 py-6">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <Image src="/logo.png" alt="Hollinger AI" width={100} height={28} className="object-contain opacity-40" />
-          <p className="text-xs text-zinc-800">Prepared for Jewel Welding Fabrication and Coatings Ltd. · May 2026</p>
+          <p className="text-xs text-zinc-800">© 2026 Hollinger AI. All rights reserved.</p>
         </div>
       </div>
 

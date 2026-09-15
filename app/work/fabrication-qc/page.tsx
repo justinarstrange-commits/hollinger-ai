@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Jewel Welding, Jipsi QC dashboard",
+  title: "Fabrication Shop, Jipsi QC dashboard",
   description:
     "A ten item QC system for a structural steel fabrication shop in the Lower Mainland: cross referencing, hold point gating, OCR of paper travellers, and a live QC dashboard. Fixed fee, delivered by Hollinger AI.",
   openGraph: {
-    title: "Jewel Welding, Jipsi QC dashboard | Hollinger AI",
+    title: "Fabrication Shop, Jipsi QC dashboard | Hollinger AI",
     description:
       "Ten item QC build for a structural steel fabricator. Cross referencing, hold point gating, OCR, live dashboard.",
-    url: "https://hollingerai.online/work/jewel-welding",
+    url: "https://hollingerai.online/work/fabrication-qc",
     siteName: "Hollinger AI",
     images: [{ url: "/results.png", width: 1600, height: 900, alt: "Jipsi QC dashboard" }],
     type: "article",
@@ -39,10 +39,10 @@ const outcomes = [
   { stat: "2", label: "phases, each on its own fixed fee work order" },
 ];
 
-// Fill in when Jewel supplies a quote. The block does not render while this is empty.
+// Fill in when the client supplies a quote. The block does not render while this is empty.
 const clientQuote = { text: "", name: "", title: "" };
 
-export default function JewelWeldingCaseStudy() {
+export default function FabricationQCCaseStudy() {
   return (
     <div className="overflow-x-hidden bg-[#0a0a0a] text-white">
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-zinc-800 bg-[#0a0a0a]/90 backdrop-blur-md">
@@ -61,7 +61,7 @@ export default function JewelWeldingCaseStudy() {
           <div className="mx-auto max-w-4xl">
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">Work · Case study</p>
             <h1 className="mb-6 text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
-              Jewel Welding. Jipsi QC dashboard.
+              Structural fabrication shop. Jipsi QC dashboard.
             </h1>
             <p className="text-lg text-zinc-400">
               Structural steel fabrication and coatings, Maple Ridge, BC. Phase 1 delivered 2026 and in daily use. Phase 2 in progress.
@@ -118,7 +118,7 @@ export default function JewelWeldingCaseStudy() {
                 <p className="text-lg leading-relaxed text-zinc-200">{clientQuote.text}</p>
                 <div className="mt-6 border-t border-zinc-800 pt-4">
                   <p className="text-sm font-semibold text-white">{clientQuote.name}</p>
-                  <p className="text-xs text-zinc-500">{clientQuote.title}, Jewel Welding</p>
+                  <p className="text-xs text-zinc-500">{clientQuote.title}</p>
                 </div>
               </div>
             )}
