@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "ERP vs AI — A Briefing for Fabrication Shops | Hollinger AI",
+  title: "ERP vs AI — A Briefing for Fabrication Shops",
   description:
     "An honest comparison of traditional ERP systems and AI integration for fabrication and manufacturing operations.",
 };

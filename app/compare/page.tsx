@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "ERP vs AI Integration | Hollinger AI",
+  title: "ERP vs AI Integration",
   description:
     "See how AI-powered workflow integration compares to traditional ERP systems like JobBoss2, ProShop, and Global Shop Solutions.",
 };

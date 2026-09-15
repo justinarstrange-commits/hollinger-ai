@@ -18,7 +18,7 @@ export async function generateMetadata({
   if (!post) return {};
   const BASE = "https://hollingerai.online";
   return {
-    title: `${post.title} | Hollinger AI`,
+    title: post.title,
     description: post.excerpt,
     keywords: ["AI integration", "Vancouver", "workflow automation", post.category],
     authors: [{ name: "Justin Strange", url: "https://justinstrange.site" }],

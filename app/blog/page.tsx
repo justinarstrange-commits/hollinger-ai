@@ -4,7 +4,7 @@ import Link from "next/link";
 import { posts } from "./posts";
 
 export const metadata: Metadata = {
-  title: "Insights | Hollinger AI",
+  title: "Insights",
   description:
     "Perspectives on enterprise AI deployment, workflow integration, and operations.",
 };

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | Hollinger AI",
+  title: "Page Not Found",
 };
 
 export default function NotFound() {
