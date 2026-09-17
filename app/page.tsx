@@ -90,6 +90,20 @@ const moreWork = [
       "A ten item QC system for a structural steel fabrication shop in the Lower Mainland: digitized inspection forms, a welder qualification matcher, a transmittal generator, and a live QC dashboard. Delivered on a fixed fee work order and in daily use.",
     items: ["Digitized QC inspection forms with signed PDF output", "Welder qualification matcher", "Transmittal generator and document register", "Scan to PDF for travellers and mill certs"],
   },
+  {
+    client: "Apex Medical Supplies",
+    sector: "Medical supplies",
+    logo: "/logo.png",
+    summary: "Details to follow.",
+    items: [],
+  },
+  {
+    client: "Comet Construction",
+    sector: "Construction",
+    logo: "/logo.png",
+    summary: "Details to follow.",
+    items: [],
+  },
 ];
 
 const steps = [
