@@ -87,7 +87,7 @@ export default function MobileNav() {
               onClick={close}
               className="flex w-full items-center justify-center rounded-sm bg-blue-600 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500"
             >
-              Talk to Justin
+              Talk to us
             </a>
             <a
               href="mailto:contact@hollingerai.online"

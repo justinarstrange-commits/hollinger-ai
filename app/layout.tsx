@@ -32,7 +32,6 @@ const jsonLd = {
       "founder": {
         "@type": "Person",
         "name": "Justin Strange",
-        "url": "https://justinstrange.site",
         "jobTitle": "Founder"
       },
       "sameAs": ["https://www.hollinger-holdings.com"]
@@ -40,10 +39,9 @@ const jsonLd = {
     {
       "@type": "Person",
       "name": "Justin Strange",
-      "url": "https://justinstrange.site",
       "jobTitle": "Founder",
       "worksFor": { "@id": "https://hollingerai.online/#organization" },
-      "sameAs": ["https://justinstrange.site", "https://www.hollinger-holdings.com/leadership/"]
+      "sameAs": ["https://www.hollinger-holdings.com/leadership/"]
     }
   ]
 };
@@ -60,7 +58,7 @@ export const metadata: Metadata = {
   description:
     "Hollinger AI builds custom AI operations software for industrial and trades businesses in BC. Fixed fee, delivered in weeks, owned by you. A division of Hollinger Holdings Corporation.",
   keywords: ["Hollinger AI", "Justin Strange", "AI operations software", "custom software BC", "QC dashboard", "Hollinger Holdings", "custom software Vancouver"],
-  authors: [{ name: "Justin Strange", url: "https://justinstrange.site" }],
+  authors: [{ name: "Justin Strange" }],
   creator: "Justin Strange",
   openGraph: {
     siteName: "Hollinger AI",

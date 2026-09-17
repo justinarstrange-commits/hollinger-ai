@@ -128,7 +128,7 @@ const steps = [
 ];
 
 const team = [
-  { name: "Justin Strange", role: "Scopes, builds, deploys, and supports every system.", link: "https://justinstrange.site" },
+  { name: "Justin Strange", role: "Scopes, builds, deploys, and supports every system." },
   { name: "Catherine Rhodes", role: "Operations: scheduling, work order tracking, and delivery follow through." },
   { name: "Daniel Park", role: "Engineering: code review, testing, and deployment checks." },
   { name: "Marcus Webb", role: "Process: mapping how the shop works today before anything is built." },
@@ -184,11 +184,10 @@ const jsonLd = {
       },
       "founder": {
         "@type": "Person",
-        "@id": "https://justinstrange.site/#person",
+        "@id": "https://hollingerai.online/#justin-strange",
         "name": "Justin Strange",
-        "url": "https://justinstrange.site",
         "jobTitle": "Founder",
-        "sameAs": ["https://justinstrange.site", "https://www.hollinger-holdings.com/leadership/"],
+        "sameAs": ["https://www.hollinger-holdings.com/leadership/"],
       },
       "parentOrganization": {
         "@type": "Organization",
@@ -203,16 +202,15 @@ const jsonLd = {
         "Safety gating logic",
         "Custom operations software",
       ],
-      "sameAs": ["https://www.hollinger-holdings.com", "https://justinstrange.site"],
+      "sameAs": ["https://www.hollinger-holdings.com"],
     },
     {
       "@type": "Person",
-      "@id": "https://justinstrange.site/#person",
+      "@id": "https://hollingerai.online/#justin-strange",
       "name": "Justin Strange",
-      "url": "https://justinstrange.site",
       "jobTitle": "Founder",
       "worksFor": { "@id": "https://hollingerai.online/#organization" },
-      "sameAs": ["https://justinstrange.site", "https://www.hollinger-holdings.com/leadership/"],
+      "sameAs": ["https://www.hollinger-holdings.com/leadership/"],
     },
     {
       "@type": "WebSite",
@@ -250,7 +248,7 @@ export default function Home() {
             href="#contact"
             className="hidden rounded-sm bg-blue-600 px-5 py-2.5 text-xs font-semibold uppercase tracking-widest text-white transition-colors hover:bg-blue-500 md:inline-flex"
           >
-            Talk to Justin
+            Talk to us
           </a>
           <MobileNav />
         </div>
@@ -277,7 +275,7 @@ export default function Home() {
                 See our work
               </a>
               <a href="#contact" className="text-sm font-medium uppercase tracking-wider text-zinc-300 transition-colors hover:text-white">
-                Talk to Justin
+                Talk to us
               </a>
             </div>
           </div>
@@ -379,7 +377,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">How the engagement works</p>
             <h2 className="mb-16 max-w-xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
-              One scope. One fee. One person.
+              One scope. One fee. One team.
             </h2>
             <div className="grid gap-16 md:grid-cols-3">
               {steps.map((step) => (
@@ -393,7 +391,7 @@ export default function Home() {
             <div className="mt-16 max-w-2xl border-t border-zinc-800 pt-8">
               <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">Who this is for</p>
               <p className="text-base leading-relaxed text-zinc-400">
-                Shops, contractors, trades, and owner led service businesses in British Columbia that run on paper, spreadsheets, and one person&apos;s memory. If you are a software company looking for a subcontractor, this is not the right fit.
+                Shops, contractors, trades, and owner led service businesses in British Columbia that run on paper, spreadsheets, and tribal memory. If you are a software company looking for a subcontractor, this is not the right fit.
               </p>
             </div>
           </div>
@@ -414,16 +412,6 @@ export default function Home() {
                 >
                   <div>
                     <p className="text-base font-semibold text-white">{member.name}</p>
-                    {"link" in member && member.link && (
-                      <a
-                        href={member.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-1 inline-block text-xs font-medium uppercase tracking-widest text-zinc-500 transition-colors hover:text-white"
-                      >
-                        justinstrange.site
-                      </a>
-                    )}
                   </div>
                   <p className="text-base leading-relaxed text-zinc-400">{member.role}</p>
                 </div>
@@ -446,7 +434,7 @@ export default function Home() {
                     Hollinger AI exists because the software operations businesses actually need is too specific for a product company to build and too small for a consultancy to price sanely. A shop with 60 people does not need an enterprise QMS. It needs the things it does every day to talk to each other, and a hard stop when a step gets missed.
                   </p>
                   <p>
-                    <a href="https://justinstrange.site" target="_blank" rel="noopener noreferrer" className="text-zinc-300 underline underline-offset-2 transition-colors hover:text-white">Justin Strange</a>
+                    <span className="text-zinc-300">Justin Strange</span>
                     {" "}has been self employed since 2004 and leads every engagement personally, scoping and building each system with a small team handling operations, engineering, and client success.
                   </p>
                   <p>

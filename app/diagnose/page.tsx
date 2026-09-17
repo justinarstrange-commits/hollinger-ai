@@ -81,7 +81,7 @@ const questions = [
       "Fewer errors and less rework",
       "Faster turnaround on quotes or jobs",
       "Better visibility into what's happening day-to-day",
-      "Reduced reliance on any one person",
+      "Reduced reliance on tribal knowledge",
     ],
   },
   {

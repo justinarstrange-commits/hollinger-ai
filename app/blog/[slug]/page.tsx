@@ -21,7 +21,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.excerpt,
     keywords: ["AI integration", "Vancouver", "workflow automation", post.category],
-    authors: [{ name: "Justin Strange", url: "https://justinstrange.site" }],
+    authors: [{ name: "Justin Strange" }],
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -59,7 +59,7 @@ export default async function ArticlePage({
     headline: post.title,
     description: post.excerpt,
     datePublished: new Date(post.date).toISOString(),
-    author: { "@type": "Person", name: "Justin Strange", url: "https://justinstrange.site" },
+    author: { "@type": "Person", name: "Justin Strange" },
     publisher: { "@type": "Organization", name: "Hollinger AI", url: "https://hollingerai.online", logo: { "@type": "ImageObject", url: "https://hollingerai.online/logo.png" } },
     mainEntityOfPage: `https://hollingerai.online/blog/${slug}`,
     image: "https://hollingerai.online/hero.png",
