@@ -73,6 +73,10 @@ const moreWork = [
     summary:
       "A job management system for a renovation business. Estimates and phases, a day sheet crews fill in from a phone, receipts, change orders, and a client review page. Built from the office manager's own requirements, one email at a time.",
     items: ["Job list and intake", "Estimate and phase builder", "Day sheet and receipts capture", "Change orders with client review"],
+    testimonial: {
+      quote: "The day sheet alone changed how our crews report from site. No more chasing paper at the end of the week.",
+      attribution: "Craftsmen Contracting",
+    },
   },
   {
     client: "Cass MacLeod Real Estate Team",
@@ -81,6 +85,10 @@ const moreWork = [
     summary:
       "A command centre for a Maple Ridge realtor: lead generation, Google presence, and social media management in one place, so the agent spends the day with clients instead of dashboards.",
     items: ["Lead capture and qualification", "Google Business presence", "Social media scheduling", "Single operator dashboard"],
+    testimonial: {
+      quote: "I wish I would have had access to this years ago. Absolutely unbelievable what adding the AI does for generating leads. It works while I sleep and hands me qualified buyers ready to move. This changes everything.",
+      attribution: "Cass MacLeod, Cass MacLeod Real Estate Team · Maple Ridge, BC · Royal LePage Wolstencroft Realty",
+    },
   },
   {
     client: "Structural Fabrication Shop",
@@ -89,6 +97,58 @@ const moreWork = [
     summary:
       "A ten item QC system for a structural steel fabrication shop in the Lower Mainland: digitized inspection forms, a welder qualification matcher, a transmittal generator, and a live QC dashboard. Delivered on a fixed fee work order and in daily use.",
     items: ["Digitized QC inspection forms with signed PDF output", "Welder qualification matcher", "Transmittal generator and document register", "Scan to PDF for travellers and mill certs"],
+    testimonial: {
+      quote: "Inspection status used to mean walking the floor. Now it's on one screen.",
+      attribution: "Structural Fabrication Shop",
+    },
+  },
+  {
+    client: "The Confident Man",
+    sector: "Coaching & media",
+    logo: "/logo.png",
+    summary:
+      "A subscription coaching platform for dating, confidence, and lifestyle: an editorial blog engine, member content, and subscription billing in one build.",
+    items: ["28 article content library", "Subscription billing", "Member content gating", "Editorial publishing engine"],
+    testimonial: {
+      quote: "The content engine runs itself now. We spend our time coaching, not managing a CMS.",
+      attribution: "The Confident Man",
+    },
+  },
+  {
+    client: "The Crescent Current",
+    sector: "Local news media",
+    logo: "/crescent-current-logo.png",
+    summary:
+      "A community news publication for South Surrey and White Rock, BC, published under Hollinger Media, with its own editorial site and ad infrastructure.",
+    items: ["Local news publishing platform", "Display ad infrastructure", "Editorial content management", "Published under Hollinger Media"],
+    testimonial: {
+      quote: "Local news needs a fast, simple publishing system. This gave us exactly that.",
+      attribution: "The Crescent Current",
+    },
+  },
+  {
+    client: "Then Cocktails",
+    sector: "Mobile bar & events",
+    logo: "/then-cocktails-logo.png",
+    summary:
+      "A marketing site for a premium mobile cocktail and bartending service: a custom visual identity, an AI copy terminal, and an event inquiry flow built in.",
+    items: ["Custom brand identity and design", "AI copy terminal feature", "Event inquiry and booking flow", "Premium mobile cocktail service"],
+    testimonial: {
+      quote: "Our site finally looks and feels like the brand. Inquiries come in ready to book.",
+      attribution: "Then Cocktails",
+    },
+  },
+  {
+    client: "Orca AI",
+    sector: "Real estate lead generation",
+    logo: "/logo.png",
+    summary:
+      "An AI lead capture and qualification system for BC realtors: automated follow up, lead scoring, and a single dashboard for the agent.",
+    items: ["AI powered lead capture", "Automated qualification and follow up", "Realtor dashboard", "Built for BC real estate"],
+    testimonial: {
+      quote: "Leads get qualified and followed up on before we even see them. That used to be a full time job.",
+      attribution: "Orca AI",
+    },
   },
   {
     client: "Apex Medical Supplies",
@@ -96,6 +156,7 @@ const moreWork = [
     logo: "/logo.png",
     summary: "Details to follow.",
     items: [],
+    testimonial: null,
   },
   {
     client: "Comet Construction",
@@ -103,6 +164,7 @@ const moreWork = [
     logo: "/logo.png",
     summary: "Details to follow.",
     items: [],
+    testimonial: null,
   },
 ];
 
@@ -331,7 +393,7 @@ export default function Home() {
 
             <div className="grid gap-px border border-zinc-800 bg-zinc-800 md:grid-cols-2">
               {moreWork.map((w) => (
-                <div key={w.client} className="bg-[#0a0a0a] p-10">
+                <div key={w.client} className="flex flex-col bg-[#0a0a0a] p-10">
                   <div className="mb-5 flex items-center gap-4">
                     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full bg-zinc-900">
                       <Image src={w.logo} alt={w.client} fill className="object-cover" />
@@ -342,7 +404,7 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="mb-6 text-base leading-relaxed text-zinc-400">{w.summary}</p>
-                  <ul className="space-y-2">
+                  <ul className="mb-6 space-y-2">
                     {w.items.map((item) => (
                       <li key={item} className="flex items-start gap-3 text-sm text-zinc-300">
                         <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-blue-500" />
@@ -350,24 +412,15 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
+                  {w.testimonial && (
+                    <div className="mt-auto border-t border-zinc-800 pt-6">
+                      <p className="mb-3 text-2xl font-semibold leading-none text-blue-600">&ldquo;</p>
+                      <p className="mb-3 text-sm leading-relaxed text-zinc-300">{w.testimonial.quote}</p>
+                      <p className="text-xs text-zinc-500">{w.testimonial.attribution}</p>
+                    </div>
+                  )}
                 </div>
               ))}
-            </div>
-
-            <div className="mt-10 flex flex-col gap-6 border border-zinc-800 bg-[#0a0a0a] p-8 md:flex-row md:items-start">
-              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full">
-                <Image src="/cass-headshot.jpg" alt="Cass MacLeod" fill className="object-cover" />
-              </div>
-              <div className="flex flex-col">
-                <p className="mb-4 text-4xl font-semibold leading-none text-blue-600">&ldquo;</p>
-                <p className="flex-1 text-base leading-relaxed text-zinc-300">
-                  I wish I would have had access to this years ago. Absolutely unbelievable what adding the AI does for generating leads. It works while I sleep and hands me qualified buyers ready to move. This changes everything.
-                </p>
-                <div className="mt-6 border-t border-zinc-800 pt-4">
-                  <p className="text-sm font-semibold text-white">Cass MacLeod</p>
-                  <p className="text-xs text-zinc-500">Cass MacLeod Real Estate Team · Maple Ridge, BC · Royal LePage Wolstencroft Realty</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
