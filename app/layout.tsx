@@ -57,9 +57,9 @@ export const metadata: Metadata = {
   },
   description:
     "Hollinger AI builds custom AI operations software for industrial and trades businesses in BC. Fixed fee, delivered in weeks, owned by you. A division of Hollinger Holdings Corporation.",
-  keywords: ["Hollinger AI", "Justin Strange", "AI operations software", "custom software BC", "QC dashboard", "Hollinger Holdings", "custom software Vancouver"],
-  authors: [{ name: "Justin Strange" }],
-  creator: "Justin Strange",
+  keywords: ["Hollinger AI", "AI operations software", "custom software BC", "QC dashboard", "Hollinger Holdings", "custom software Vancouver"],
+  authors: [{ name: "Hollinger AI" }],
+  creator: "Hollinger AI",
   openGraph: {
     siteName: "Hollinger AI",
     images: [{ url: "/hero.png", width: 1978, height: 1114, alt: "Hollinger AI" }],

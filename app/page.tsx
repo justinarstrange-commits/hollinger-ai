@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     "QC dashboard software",
     "workflow automation BC",
     "Hollinger AI",
-    "Justin Strange",
   ],
   openGraph: {
     title: "Hollinger AI | Applied AI Performance Systems",
@@ -217,7 +216,7 @@ const faqs = [
   },
   {
     q: "Who does the work?",
-    a: "Justin Strange builds every system personally. There is no handoff to a junior team.",
+    a: "We build every system in house. There is no handoff to a junior team.",
   },
   {
     q: "What happens after delivery?",
@@ -487,8 +486,7 @@ export default function Home() {
                     Hollinger AI exists because the software operations businesses actually need is too specific for a product company to build and too small for a consultancy to price sanely. A shop with 60 people does not need an enterprise QMS. It needs the things it does every day to talk to each other, and a hard stop when a step gets missed.
                   </p>
                   <p>
-                    <span className="text-zinc-300">Justin Strange</span>
-                    {" "}has been self employed since 2004 and leads every engagement personally, scoping and building each system with a small team handling operations, engineering, and client success.
+                    We have been building operations software since 2004. Every engagement is scoped and built by our team, with dedicated people handling operations, engineering, and client success.
                   </p>
                   <p>
                     Hollinger AI is a division of Hollinger Holdings Corporation, Vancouver, BC.
@@ -530,7 +528,7 @@ export default function Home() {
                   What is the shop losing time on?
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-zinc-400">
-                  Justin Strange builds every system personally and takes on a small number of engagements at a time. Tell him what the floor deals with and he will come out and walk it with you.
+                  We take on a small number of engagements at a time and build every system in house. Tell us what the floor deals with and we will come out and walk it with you.
                 </p>
                 <ContactForm />
               </div>
