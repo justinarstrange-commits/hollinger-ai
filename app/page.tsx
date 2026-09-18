@@ -189,7 +189,7 @@ const steps = [
 ];
 
 const team = [
-  { name: "Justin Strange", role: "Scopes, builds, deploys, and supports every system." },
+  { name: "Justin Strange", role: "Founder. Leads scoping and delivery alongside the team." },
   { name: "Catherine Rhodes", role: "Operations: scheduling, work order tracking, and delivery follow through." },
   { name: "Daniel Park", role: "Engineering: code review, testing, and deployment checks." },
   { name: "Marcus Webb", role: "Process: mapping how the shop works today before anything is built." },
