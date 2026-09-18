@@ -60,7 +60,7 @@ const buildItems = [
   {
     title: "Dashboards",
     description:
-      "What is in QC, what is blocked, what is overdue. Visible to the shop floor and the office at the same time.",
+      "What is in QC, what is blocked, what is overdue. Visible to the floor and the office at the same time.",
   },
 ];
 
@@ -192,7 +192,7 @@ const team = [
   { name: "Justin Strange", role: "Founder. Leads scoping and delivery alongside the team." },
   { name: "Catherine Rhodes", role: "Operations: scheduling, work order tracking, and delivery follow through." },
   { name: "Daniel Park", role: "Engineering: code review, testing, and deployment checks." },
-  { name: "Marcus Webb", role: "Process: mapping how the shop works today before anything is built." },
+  { name: "Marcus Webb", role: "Process: mapping how the business works today before anything is built." },
   { name: "Sophia Reyes", role: "Client success: onboarding, training materials, and post delivery check ins." },
   { name: "Ryan Calloway", role: "Strategy: scope structure, phasing, and pricing review." },
 ];
@@ -200,7 +200,7 @@ const team = [
 const faqs = [
   {
     q: "We are not a tech company. Is this for us?",
-    a: "Yes. Every client runs a shop, a crew, or a client book, not a software team. The system is built around how your floor already works, and your team runs it without technical staff.",
+    a: "Yes. Every client runs a business, a crew, or a client book, not a software team. The system is built around how you already work, and your team runs it without technical staff.",
   },
   {
     q: "How long does a build take?",
@@ -212,7 +212,7 @@ const faqs = [
   },
   {
     q: "What does it cost?",
-    a: "Fixed fee, itemized, quoted after the diagnostic. First builds for shops in the 20 to 200 person range have ranged from the mid teens to the mid forty thousands, depending on how many items are in scope. There is no hourly billing and no retainer.",
+    a: "Fixed fee, itemized, quoted after the diagnostic. First builds for businesses in the 20 to 200 person range have ranged from the mid teens to the mid forty thousands, depending on how many items are in scope. There is no hourly billing and no retainer.",
   },
   {
     q: "Who does the work?",
@@ -258,7 +258,7 @@ const jsonLd = {
       "areaServed": ["Vancouver", "Lower Mainland", "Fraser Valley", "British Columbia"],
       "knowsAbout": [
         "Quality control software",
-        "Fabrication shop operations",
+        "Business operations software",
         "OCR digitization",
         "Safety gating logic",
         "Custom operations software",
@@ -349,12 +349,12 @@ export default function Home() {
               <div>
                 <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">What it is</p>
                 <h2 className="text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
-                  The system that sits in the gaps between your ERP, your spreadsheet, and your paper traveller.
+                  The system that sits in the gaps between the tools you already run.
                 </h2>
               </div>
               <div className="space-y-5 text-base leading-relaxed text-zinc-400">
                 <p>
-                  Most shops and trades businesses run on paper, spreadsheets, and whatever the ERP will not do. The gaps between those systems are where rework, missed inspections, and late paperwork come from.
+                  Most businesses run on paper, spreadsheets, and whatever their other systems will not do. The gaps between those systems are where rework, missed steps, and late paperwork come from.
                 </p>
                 <p>
                   Hollinger AI builds the system that closes those gaps, scoped and built for your operation. No account manager, no offshore team, no subscription that holds your data hostage.
@@ -369,7 +369,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">What a build typically includes</p>
             <h2 className="mb-16 max-w-xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
-              Four things every shop asks for. Scoped to yours.
+              Four things every business asks for. Scoped to yours.
             </h2>
             <div className="grid gap-px border border-zinc-800 bg-zinc-800 sm:grid-cols-2">
               {buildItems.map((item) => (
@@ -443,7 +443,7 @@ export default function Home() {
             <div className="mt-16 max-w-2xl border-t border-zinc-800 pt-8">
               <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">Who this is for</p>
               <p className="text-base leading-relaxed text-zinc-400">
-                Shops, contractors, trades, and owner led service businesses in British Columbia that run on paper, spreadsheets, and tribal memory. If you are a software company looking for a subcontractor, this is not the right fit.
+                Contractors, trades, and owner led service businesses in British Columbia that run on paper, spreadsheets, and tribal memory. If you are a software company looking for a subcontractor, this is not the right fit.
               </p>
             </div>
           </div>
@@ -483,7 +483,7 @@ export default function Home() {
                 </h2>
                 <div className="space-y-5 text-base leading-relaxed text-zinc-400">
                   <p>
-                    Hollinger AI exists because the software operations businesses actually need is too specific for a product company to build and too small for a consultancy to price sanely. A shop with 60 people does not need an enterprise QMS. It needs the things it does every day to talk to each other, and a hard stop when a step gets missed.
+                    Hollinger AI exists because the software operations businesses actually need is too specific for a product company to build and too small for a consultancy to price sanely. A business with 60 people does not need enterprise software built for a Fortune 500. It needs the things it does every day to talk to each other, and a hard stop when a step gets missed.
                   </p>
                   <p>
                     We have been building operations software since 2004. Every engagement is scoped and built by our team, with dedicated people handling operations, engineering, and client success.
@@ -505,7 +505,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">FAQ</p>
             <h2 className="mb-16 max-w-xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
-              Questions shops ask before the first site visit.
+              Questions we get before the first site visit.
             </h2>
             <div className="divide-y divide-zinc-800">
               {faqs.map(({ q, a }) => (
@@ -525,7 +525,7 @@ export default function Home() {
               <div>
                 <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">Contact</p>
                 <h2 className="mb-4 text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
-                  What is the shop losing time on?
+                  What is your business losing time on?
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-zinc-400">
                   We take on a small number of engagements at a time and build every system in house. Tell us what the floor deals with and we will come out and walk it with you.
@@ -554,7 +554,7 @@ export default function Home() {
                 <div>
                   <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-zinc-500">Service area</p>
                   <p className="text-base text-zinc-300">
-                    Fabrication and industrial shops across the Lower Mainland and Fraser Valley. Site visits are part of every diagnostic.
+                    Businesses across the Lower Mainland and Fraser Valley. Site visits are part of every diagnostic.
                   </p>
                 </div>
               </div>
@@ -573,7 +573,7 @@ export default function Home() {
                 Applied AI Performance Systems
               </p>
               <p className="mt-2 text-sm leading-relaxed text-zinc-500">
-                Custom AI operations software for fabrication and industrial shops.
+                Custom AI operations software for your business.
               </p>
               <a
                 href="https://www.hollinger-holdings.com"

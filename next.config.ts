@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/compare",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };

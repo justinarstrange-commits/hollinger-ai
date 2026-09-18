@@ -195,23 +195,6 @@ export const posts: Post[] = [
     ],
   },
   {
-    slug: "fabrication_shop_quoting",
-    title: "What Fabrication Shops Lose Every Week to Manual Quoting",
-    date: "September 16, 2025",
-    category: "Industry",
-    readTime: "5 min read",
-    excerpt:
-      "Most fabrication shops run their estimating the same way they did fifteen years ago. A skilled estimator, a spreadsheet, and a stack of supplier price sheets. The margin erosion is quiet and consistent.",
-    content: [
-      "Most fabrication shops run their estimating the same way they did fifteen years ago. A skilled estimator pulls material pricing from supplier lists that may be weeks out of date, calculates labor hours from experience and intuition, and builds the quote in a spreadsheet or a job management system that was not designed for complex fabrication work. The quote goes out. The job gets won. The margin does not match the estimate.",
-      "This is not a people problem. Experienced estimators are among the most valuable people in any fab shop. The problem is the process they are forced to operate within. Material prices for steel, aluminum, and specialty alloys change frequently and without notice. An estimator quoting on a Tuesday morning may be working from pricing that is two weeks old. On a competitive job with tight margins, that gap is often the difference between a profitable contract and one that bleeds.",
-      "Speed compounds the problem. A shop running at capacity cannot afford to have its best estimator spending four hours on a single complex quote. The pressure to produce estimates quickly leads to shortcuts. Assumptions replace calculations. Historical pricing gets applied to jobs where the material mix is different. Rush jobs get quoted without proper margin analysis because the customer needs an answer today.",
-      "The other issue is concentration of knowledge. When quoting accuracy lives in an estimator's head rather than a system, the business is exposed every time that person is sick, on holiday, or eventually moves on. Shops that have tried to document their estimating logic discover how much of it was never written down.",
-      "AI-assisted quoting connects directly to live supplier pricing, calculates labor from actual historical job data rather than estimates, and produces accurate quotes in a fraction of the time. The estimator's expertise does not disappear — it gets encoded into the system and becomes a repeatable, auditable process instead of a personal skill.",
-      "If your estimator is the bottleneck in your sales process, or if you are consistently winning jobs that underperform on margin, that is a problem we have solved for fabrication operations before. It is not a long project. The data you need to make it work is already in your system.",
-    ],
-  },
-  {
     slug: "enterprise_ai_stack_2025",
     title: "The Enterprise AI Stack: What Actually Matters",
     date: "October 14, 2025",
@@ -294,23 +277,6 @@ export const posts: Post[] = [
       "Change order management has a similar profile. Change orders involve cost implications, schedule impacts, and often disputed scope. Tracking what was agreed, what was submitted, what was approved, and what was actually billed requires documentation discipline that varies widely across teams and projects. Disputes at closeout frequently come back to documentation gaps that could have been prevented with better workflow structure.",
       "AI in construction document workflows does not replace the judgment of an experienced PM. It handles the routing, the tracking, the escalation when items are overdue, and the assembly of documentation when it is needed for disputes, audits, or closeout. It makes the PM's job more about decisions and less about administration.",
       "Construction firms that have deployed this describe the same change: their project managers are not doing less work, they are doing different work. If your teams are buried in admin on every project, that pattern is not going to fix itself as project complexity increases. It is fixable now.",
-    ],
-  },
-  {
-    slug: "manufacturing_shift_handoff",
-    title: "The Shift Handoff Problem in Manufacturing",
-    date: "March 17, 2026",
-    category: "Industry",
-    readTime: "4 min read",
-    excerpt:
-      "Every manufacturing operation has three or four shift handoffs every day. Each one is a point where information is lost, context is dropped, and problems that started on one shift become crises on the next.",
-    content: [
-      "Every manufacturing operation running multiple shifts has three or four handoffs every day. Each one is a moment where information transfers between teams, and each one is a point where something gets lost.",
-      "The shift handoff is an old problem and most operations have some process for managing it. A logbook. A verbal briefing. A whiteboard. A section of the MES or ERP dedicated to shift notes. The problem is not that these mechanisms do not exist. It is that they depend on the outgoing shift accurately capturing what happened, the incoming shift actually reading and retaining what was written, and both teams sharing the same definition of what is worth documenting.",
-      "In practice, handoff quality varies with the shift. A smooth run produces a brief, optimistic log. A difficult shift produces either a detailed record of everything that went wrong, or a minimal one because the team was too busy dealing with problems to document them. Incoming supervisors learn quickly not to trust the log as a complete picture and spend the first part of each shift piecing together the actual state of the floor through their own observation and informal conversations.",
-      "This information loss has a compounding cost. A machine running slightly out of spec at the end of first shift produces defects on second. A maintenance issue flagged verbally but not documented gets missed in the shift change and becomes a breakdown on third. A quality concern noted by one operator does not make it into the log and is not checked during incoming inspection. The root cause in each case is not the machine or the process — it is the handoff.",
-      "Structured AI-assisted shift reporting changes the input side of this problem. Rather than relying on supervisors to decide what to document, the system prompts for the specific information that matters: production against target, equipment status, quality holds, open maintenance tickets, safety observations, items requiring follow-up. The incoming supervisor does not read a freeform log. They receive a structured brief with the previous shift's status on every dimension that affects their shift.",
-      "If your operations are losing continuity between shifts, and the same problems are appearing shift after shift without resolution, the handoff is worth examining before anything else. The fix is not complicated, and the impact on operational consistency is immediate.",
     ],
   },
   {
