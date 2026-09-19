@@ -6,18 +6,21 @@ import ContactForm from "./components/ContactForm";
 export const metadata: Metadata = {
   title: "Hollinger AI | Applied AI Performance Systems",
   description:
-    "Hollinger AI builds custom AI operations software for industrial and trades businesses in British Columbia. Fixed fee builds, delivered in weeks, owned by you.",
+    "Hollinger AI builds custom AI operations software for healthcare, real estate, construction, professional practices, and other established businesses in British Columbia. Fixed fee builds, delivered in weeks, owned by you.",
   keywords: [
     "AI operations software BC",
     "custom software Vancouver",
     "QC dashboard software",
     "workflow automation BC",
+    "AI for healthcare administration",
+    "AI for real estate",
+    "AI for construction",
     "Hollinger AI",
   ],
   openGraph: {
     title: "Hollinger AI | Applied AI Performance Systems",
     description:
-      "Custom AI operations software for industrial and trades businesses in BC. Fixed fee, delivered in weeks, you own the code.",
+      "Custom AI operations software for healthcare, real estate, construction, and other established businesses in BC. Fixed fee, delivered in weeks, you own the code.",
     url: "https://hollingerai.online",
     siteName: "Hollinger AI",
     images: [{ url: "/hero.png", width: 1978, height: 1114, alt: "Hollinger AI" }],
@@ -27,13 +30,25 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hollinger AI",
-    description: "Custom AI operations software for industrial and trades businesses. Fixed fee, delivered in weeks.",
+    description: "Custom AI operations software for healthcare, real estate, construction, and other established businesses. Fixed fee, delivered in weeks.",
     images: ["/hero.png"],
   },
 };
 
+const industries = [
+  { name: "Healthcare & Medical", note: "Clinics, dental practices, and medical suppliers running on paper charts and phone tag." },
+  { name: "Real Estate", note: "Lead capture, qualification, and follow up that runs while the agent is with a client." },
+  { name: "Construction & Trades", note: "Estimates, day sheets, change orders, and job tracking crews actually use." },
+  { name: "Professional Practices", note: "Dental, legal, and accounting offices losing hours to intake and documentation." },
+  { name: "Logistics & Freight", note: "Exception handling and status tracking without another dashboard nobody opens." },
+  { name: "Hospitality & Events", note: "Booking, inquiry, and event coordination built around how the business actually runs." },
+  { name: "Insurance", note: "Claims intake, document review, and client communication for brokerages and adjusters." },
+  { name: "Manufacturing & Industrial", note: "QC, inspection, and job tracking for fabrication and industrial shops." },
+];
+
 const navLinks = [
   { label: "Work", href: "#work" },
+  { label: "Industries", href: "#industries" },
   { label: "How it works", href: "#how-it-works" },
   { label: "Team", href: "#team" },
   { label: "About", href: "#about" },
@@ -234,7 +249,7 @@ const jsonLd = {
       "url": "https://hollingerai.online",
       "logo": "https://hollingerai.online/logo.png",
       "image": "https://hollingerai.online/hero.png",
-      "description": "Custom AI operations software for industrial and fabrication companies in British Columbia.",
+      "description": "Custom AI operations software for healthcare, real estate, construction, professional practices, and other established businesses in British Columbia.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "422 Richards Street, #170",
@@ -257,10 +272,11 @@ const jsonLd = {
       },
       "areaServed": ["Vancouver", "Lower Mainland", "Fraser Valley", "British Columbia"],
       "knowsAbout": [
+        "Healthcare administration software",
+        "Real estate lead management",
+        "Construction and trades software",
         "Quality control software",
-        "Business operations software",
-        "OCR digitization",
-        "Safety gating logic",
+        "Document intake and OCR digitization",
         "Custom operations software",
       ],
       "sameAs": ["https://www.hollinger-holdings.com"],
@@ -364,6 +380,24 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Industries */}
+        <section id="industries" className="border-t border-zinc-800 px-6 py-24 md:py-32">
+          <div className="mx-auto max-w-6xl">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-blue-500">Industries</p>
+            <h2 className="mb-16 max-w-xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl">
+              Built for businesses that run on paper, not for software teams.
+            </h2>
+            <div className="grid gap-px border border-zinc-800 bg-zinc-800 sm:grid-cols-2 lg:grid-cols-4">
+              {industries.map((item) => (
+                <div key={item.name} className="bg-[#0a0a0a] p-8">
+                  <h3 className="mb-2 text-base font-semibold text-white">{item.name}</h3>
+                  <p className="text-sm leading-relaxed text-zinc-500">{item.note}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* What a build includes */}
         <section className="border-t border-zinc-800 bg-zinc-900/20 px-6 py-24 md:py-32">
           <div className="mx-auto max-w-6xl">
@@ -443,7 +477,7 @@ export default function Home() {
             <div className="mt-16 max-w-2xl border-t border-zinc-800 pt-8">
               <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500">Who this is for</p>
               <p className="text-base leading-relaxed text-zinc-400">
-                Contractors, trades, and owner led service businesses in British Columbia that run on paper, spreadsheets, and tribal memory. If you are a software company looking for a subcontractor, this is not the right fit.
+                Established businesses in British Columbia across healthcare, real estate, construction, professional practices, and trades that run on paper, spreadsheets, and tribal memory. If you are a software company looking for a subcontractor, this is not the right fit.
               </p>
             </div>
           </div>
