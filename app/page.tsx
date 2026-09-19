@@ -227,7 +227,7 @@ const faqs = [
   },
   {
     q: "How long does a build take?",
-    a: "Phase 1 for a recent fabrication client went from signed work order to daily use in [N] weeks. Most first builds land in a similar range. You get a date in the scope, not an estimate.",
+    a: "Phase 1 for a recent fabrication client went from signed work order to daily use in 2 to 6 weeks. Most first builds land in a similar range. You get a date in the scope, not an estimate.",
   },
   {
     q: "Does it work with our existing software?",
