@@ -105,18 +105,6 @@ const moreWork = [
     },
   },
   {
-    client: "Structural Fabrication Shop",
-    sector: "Fabrication & coatings",
-    logo: "/logo.png",
-    summary:
-      "A ten item QC system for a structural steel fabrication shop in the Lower Mainland: digitized inspection forms, a welder qualification matcher, a transmittal generator, and a live QC dashboard. Delivered on a fixed fee work order and in daily use.",
-    items: ["Digitized QC inspection forms with signed PDF output", "Welder qualification matcher", "Transmittal generator and document register", "Scan to PDF for travellers and mill certs"],
-    testimonial: {
-      quote: "Inspection status used to mean walking the floor. Now it's on one screen.",
-      attribution: "Structural Fabrication Shop",
-    },
-  },
-  {
     client: "The Confident Man",
     sector: "Coaching & media",
     logo: "/logo.png",
@@ -186,6 +174,18 @@ const moreWork = [
     testimonial: {
       quote: "We finally know if a job is on budget before it is finished, not after.",
       attribution: "Comet Construction",
+    },
+  },
+  {
+    client: "Jewel Welding",
+    sector: "Fabrication & coatings",
+    logo: "/logo.png",
+    summary:
+      "A ten item QC system for Jewel Welding, a structural steel fabrication and coatings shop in Maple Ridge, BC: digitized inspection forms, a welder qualification matcher, a transmittal generator, and a live QC dashboard. Delivered on a fixed fee work order and in daily use.",
+    items: ["Digitized QC inspection forms with signed PDF output", "Welder qualification matcher", "Transmittal generator and document register", "Scan to PDF for travellers and mill certs"],
+    testimonial: {
+      quote: "Inspection status used to mean walking the floor. Now it's on one screen.",
+      attribution: "Jewel Welding",
     },
   },
 ];
