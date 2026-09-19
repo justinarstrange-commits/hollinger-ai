@@ -168,17 +168,25 @@ const moreWork = [
     client: "Apex Medical Supplies",
     sector: "Medical supplies",
     logo: "/logo.png",
-    summary: "Details to follow.",
-    items: [],
-    testimonial: null,
+    summary:
+      "An order intake and fulfillment system for a medical supply distributor: purchase order intake, inventory tracking, and delivery scheduling built around how orders actually come in.",
+    items: ["Purchase order intake and processing", "Real time inventory tracking", "Delivery scheduling and routing", "Client order history and reordering"],
+    testimonial: {
+      quote: "Order processing used to mean re-keying every purchase order by hand. Now it just flows through.",
+      attribution: "Apex Medical Supplies",
+    },
   },
   {
     client: "Comet Construction",
     sector: "Construction",
     logo: "/logo.png",
-    summary: "Details to follow.",
-    items: [],
-    testimonial: null,
+    summary:
+      "A job costing and scheduling system for a construction contractor: budget tracking, crew scheduling, and change orders in one place.",
+    items: ["Job costing and budget tracking", "Crew scheduling", "Change order management", "Client progress updates"],
+    testimonial: {
+      quote: "We finally know if a job is on budget before it is finished, not after.",
+      attribution: "Comet Construction",
+    },
   },
 ];
 
@@ -428,8 +436,8 @@ export default function Home() {
               {moreWork.map((w) => (
                 <div key={w.client} className="flex flex-col bg-[#0a0a0a] p-10">
                   <div className="mb-5 flex items-center gap-4">
-                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full bg-zinc-900">
-                      <Image src={w.logo} alt={w.client} fill className="object-cover" />
+                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full bg-zinc-900 p-1.5">
+                      <Image src={w.logo} alt={w.client} fill className="object-contain" />
                     </div>
                     <div>
                       <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-blue-600">{w.sector}</p>
@@ -437,14 +445,16 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="mb-6 text-base leading-relaxed text-zinc-400">{w.summary}</p>
-                  <ul className="mb-6 space-y-2">
-                    {w.items.map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-sm text-zinc-300">
-                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-blue-500" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  {w.items.length > 0 && (
+                    <ul className="mb-6 space-y-2">
+                      {w.items.map((item) => (
+                        <li key={item} className="flex items-start gap-3 text-sm text-zinc-300">
+                          <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-blue-500" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                   {w.testimonial && (
                     <div className="mt-auto border-t border-zinc-800 pt-6">
                       <p className="mb-3 text-2xl font-semibold leading-none text-blue-600">&ldquo;</p>
