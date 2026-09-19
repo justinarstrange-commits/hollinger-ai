@@ -433,8 +433,13 @@ export default function Home() {
             </h2>
 
             <div className="grid gap-px border border-zinc-800 bg-zinc-800 md:grid-cols-2">
-              {moreWork.map((w) => (
-                <div key={w.client} className="flex flex-col bg-[#0a0a0a] p-10">
+              {moreWork.map((w, i) => (
+                <div
+                  key={w.client}
+                  className={`flex flex-col bg-[#0a0a0a] p-10 ${
+                    moreWork.length % 2 !== 0 && i === moreWork.length - 1 ? "md:col-span-2" : ""
+                  }`}
+                >
                   <div className="mb-5 flex items-center gap-4">
                     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full bg-zinc-900 p-1.5">
                       <Image src={w.logo} alt={w.client} fill className="object-contain" />
